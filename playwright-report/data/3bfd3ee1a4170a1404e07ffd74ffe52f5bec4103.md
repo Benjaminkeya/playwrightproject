@@ -1,0 +1,2357 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: protocolbuilder.spec.js >> Protocol Page tests >> @smoke @sanity @regression Delete Protocol From Protocol Listing
+- Location: tests/protocolbuilder.spec.js:41:8
+
+# Error details
+
+```
+Test timeout of 60000ms exceeded.
+```
+
+```
+Error: locator.selectOption: Test timeout of 60000ms exceeded.
+Call log:
+  - waiting for getByRole('combobox')
+    - locator resolved to <select class="form-select form-select-sm">…</select>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic:
+    - alert [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e6]: check_circle
+        - generic [ref=e7]:
+          - heading "Protocol deleted successfully" [level=5] [ref=e8]
+          - paragraph [ref=e9]: The protocol has been deleted successfully.
+        - generic [ref=e11]: close
+    - alert [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e15]: check_circle
+        - generic [ref=e16]:
+          - heading "Protocol deleted successfully" [level=5] [ref=e17]
+          - paragraph [ref=e18]: The protocol has been deleted successfully.
+        - generic [ref=e20]: close
+    - alert [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e24]: check_circle
+        - generic [ref=e25]:
+          - heading "Protocol deleted successfully" [level=5] [ref=e26]
+          - paragraph [ref=e27]: The protocol has been deleted successfully.
+        - generic [ref=e29]: close
+  - generic [ref=e30]:
+    - navigation [ref=e31]:
+      - generic [ref=e32]:
+        - link "Logo" [ref=e33] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=e34]
+        - generic [ref=e35]:
+          - button "1PixelEdge Test Automation " [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: 1PixelEdge Test Automation
+            - text: 
+          - generic [ref=e40]:
+            - button "What's New " [ref=e42] [cursor=pointer]
+            - generic [ref=e43] [cursor=pointer]:
+              - generic [ref=e44]: help
+              - text: Help
+            - generic [ref=e45] [cursor=pointer]:
+              - generic [ref=e46]: chat
+              - text: Feedback
+            - link "Assessments" [ref=e48] [cursor=pointer]:
+              - /url: /audits
+            - link "Action Items" [ref=e50] [cursor=pointer]:
+              - /url: /action-items
+            - button "Hi, Playwright " [ref=e52] [cursor=pointer]
+    - generic [ref=e53] [cursor=pointer]:
+      - navigation "breadcrumb" [ref=e55]:
+        - list [ref=e56]:
+          - listitem [ref=e57]:
+            - link "Dashboard" [ref=e58]:
+              - /url: /
+          - listitem [ref=e59]: / protocols
+      - generic [ref=e60]:
+        - heading "Protocols" [level=1] [ref=e62]
+        - button "add New Protocol" [ref=e63]:
+          - generic [ref=e64]: add
+          - text: New Protocol
+      - generic [ref=e65]:
+        - table [ref=e67]:
+          - rowgroup [ref=e68]:
+            - row "Name swap_vert Status Assessments Description Updated arrow_downward" [ref=e69]:
+              - columnheader "Name swap_vert" [ref=e70]:
+                - text: Name
+                - generic [ref=e71]: swap_vert
+              - columnheader "Status" [ref=e72]
+              - columnheader "Assessments" [ref=e73]
+              - columnheader "Description" [ref=e74]
+              - columnheader "Updated arrow_downward" [ref=e75]:
+                - text: Updated
+                - generic [ref=e76]: arrow_downward
+              - columnheader [ref=e77]
+          - rowgroup [ref=e78]:
+            - row "Protocol_32082 Active - 2/26/26, 7:08 PM content_copy edit delete" [ref=e79]:
+              - cell "Protocol_32082" [ref=e80]:
+                - heading "Protocol_32082" [level=6] [ref=e81]:
+                  - link "Protocol_32082" [ref=e82]:
+                    - /url: /protocols/69a07007642b3575885626
+              - cell "Active" [ref=e83]
+              - cell "-" [ref=e84]
+              - cell [ref=e85]
+              - cell "2/26/26, 7:08 PM" [ref=e86]
+              - cell "content_copy edit delete" [ref=e87]:
+                - generic [ref=e88]:
+                  - button "content_copy" [ref=e91]:
+                    - generic [ref=e92]: content_copy
+                  - button "edit" [ref=e94]:
+                    - generic [ref=e95]: edit
+                  - button "delete" [ref=e97]:
+                    - generic [ref=e98]: delete
+            - row "Protocol_22745 Active - 2/26/26, 7:08 PM content_copy edit delete" [ref=e99]:
+              - cell "Protocol_22745" [ref=e100]:
+                - heading "Protocol_22745" [level=6] [ref=e101]:
+                  - link "Protocol_22745" [ref=e102]:
+                    - /url: /protocols/69a06ffecf73f667261309
+              - cell "Active" [ref=e103]
+              - cell "-" [ref=e104]
+              - cell [ref=e105]
+              - cell "2/26/26, 7:08 PM" [ref=e106]
+              - cell "content_copy edit delete" [ref=e107]:
+                - generic [ref=e108]:
+                  - button "content_copy" [ref=e111]:
+                    - generic [ref=e112]: content_copy
+                  - button "edit" [ref=e114]:
+                    - generic [ref=e115]: edit
+                  - button "delete" [ref=e117]:
+                    - generic [ref=e118]: delete
+            - row "Protocol_22513 Active - 2/26/26, 7:08 PM content_copy edit delete" [ref=e119]:
+              - cell "Protocol_22513" [ref=e120]:
+                - heading "Protocol_22513" [level=6] [ref=e121]:
+                  - link "Protocol_22513" [ref=e122]:
+                    - /url: /protocols/69a06ff877177052597926
+              - cell "Active" [ref=e123]
+              - cell "-" [ref=e124]
+              - cell [ref=e125]
+              - cell "2/26/26, 7:08 PM" [ref=e126]
+              - cell "content_copy edit delete" [ref=e127]:
+                - generic [ref=e128]:
+                  - button "content_copy" [ref=e131]:
+                    - generic [ref=e132]: content_copy
+                  - button "edit" [ref=e134]:
+                    - generic [ref=e135]: edit
+                  - button "delete" [ref=e137]:
+                    - generic [ref=e138]: delete
+            - row "UpdatedProtocolName_41109 Inactive - This is updated protocol Description 2/26/26, 7:08 PM content_copy edit delete" [ref=e139]:
+              - cell "UpdatedProtocolName_41109" [ref=e140]:
+                - heading "UpdatedProtocolName_41109" [level=6] [ref=e141]:
+                  - link "UpdatedProtocolName_41109" [ref=e142]:
+                    - /url: /protocols/69a06ff0736f1354276264
+              - cell "Inactive" [ref=e143]
+              - cell "-" [ref=e144]
+              - cell "This is updated protocol Description" [ref=e145]
+              - cell "2/26/26, 7:08 PM" [ref=e146]
+              - cell "content_copy edit delete" [ref=e147]:
+                - generic [ref=e148]:
+                  - button "content_copy" [ref=e151]:
+                    - generic [ref=e152]: content_copy
+                  - button "edit" [ref=e154]:
+                    - generic [ref=e155]: edit
+                  - button "delete" [ref=e157]:
+                    - generic [ref=e158]: delete
+            - row "Protocol_17838 Active - 2/26/26, 7:08 PM content_copy edit delete" [ref=e159]:
+              - cell "Protocol_17838" [ref=e160]:
+                - heading "Protocol_17838" [level=6] [ref=e161]:
+                  - link "Protocol_17838" [ref=e162]:
+                    - /url: /protocols/69a06feacfb22220256517
+              - cell "Active" [ref=e163]
+              - cell "-" [ref=e164]
+              - cell [ref=e165]
+              - cell "2/26/26, 7:08 PM" [ref=e166]
+              - cell "content_copy edit delete" [ref=e167]:
+                - generic [ref=e168]:
+                  - button "content_copy" [ref=e171]:
+                    - generic [ref=e172]: content_copy
+                  - button "edit" [ref=e174]:
+                    - generic [ref=e175]: edit
+                  - button "delete" [ref=e177]:
+                    - generic [ref=e178]: delete
+            - row "UpdatedProtocolName_33798 Inactive - Updated Protocol Name 2/26/26, 7:08 PM content_copy edit delete" [ref=e179]:
+              - cell "UpdatedProtocolName_33798" [ref=e180]:
+                - heading "UpdatedProtocolName_33798" [level=6] [ref=e181]:
+                  - link "UpdatedProtocolName_33798" [ref=e182]:
+                    - /url: /protocols/69a06fe392237066351845
+              - cell "Inactive" [ref=e183]
+              - cell "-" [ref=e184]
+              - cell "Updated Protocol Name" [ref=e185]
+              - cell "2/26/26, 7:08 PM" [ref=e186]
+              - cell "content_copy edit delete" [ref=e187]:
+                - generic [ref=e188]:
+                  - button "content_copy" [ref=e191]:
+                    - generic [ref=e192]: content_copy
+                  - button "edit" [ref=e194]:
+                    - generic [ref=e195]: edit
+                  - button "delete" [ref=e197]:
+                    - generic [ref=e198]: delete
+            - row "CloneProtocol_80001 Active - 2/26/26, 7:07 PM content_copy edit delete" [ref=e199]:
+              - cell "CloneProtocol_80001" [ref=e200]:
+                - heading "CloneProtocol_80001" [level=6] [ref=e201]:
+                  - link "CloneProtocol_80001" [ref=e202]:
+                    - /url: /protocols/69a06fde3a946082375595
+              - cell "Active" [ref=e203]
+              - cell "-" [ref=e204]
+              - cell [ref=e205]
+              - cell "2/26/26, 7:07 PM" [ref=e206]
+              - cell "content_copy edit delete" [ref=e207]:
+                - generic [ref=e208]:
+                  - button "content_copy" [ref=e211]:
+                    - generic [ref=e212]: content_copy
+                  - button "edit" [ref=e214]:
+                    - generic [ref=e215]: edit
+                  - button "delete" [ref=e217]:
+                    - generic [ref=e218]: delete
+            - row "Protocol_13831 Active - 2/26/26, 7:07 PM content_copy edit delete" [ref=e219]:
+              - cell "Protocol_13831" [ref=e220]:
+                - heading "Protocol_13831" [level=6] [ref=e221]:
+                  - link "Protocol_13831" [ref=e222]:
+                    - /url: /protocols/69a06fdc420d5164494488
+              - cell "Active" [ref=e223]
+              - cell "-" [ref=e224]
+              - cell [ref=e225]
+              - cell "2/26/26, 7:07 PM" [ref=e226]
+              - cell "content_copy edit delete" [ref=e227]:
+                - generic [ref=e228]:
+                  - button "content_copy" [ref=e231]:
+                    - generic [ref=e232]: content_copy
+                  - button "edit" [ref=e234]:
+                    - generic [ref=e235]: edit
+                  - button "delete" [ref=e237]:
+                    - generic [ref=e238]: delete
+            - row "Protocol_29685 Active - 2/26/26, 7:07 PM content_copy edit delete" [ref=e239]:
+              - cell "Protocol_29685" [ref=e240]:
+                - heading "Protocol_29685" [level=6] [ref=e241]:
+                  - link "Protocol_29685" [ref=e242]:
+                    - /url: /protocols/69a06fd6e5103543455162
+              - cell "Active" [ref=e243]
+              - cell "-" [ref=e244]
+              - cell [ref=e245]
+              - cell "2/26/26, 7:07 PM" [ref=e246]
+              - cell "content_copy edit delete" [ref=e247]:
+                - generic [ref=e248]:
+                  - button "content_copy" [ref=e251]:
+                    - generic [ref=e252]: content_copy
+                  - button "edit" [ref=e254]:
+                    - generic [ref=e255]: edit
+                  - button "delete" [ref=e257]:
+                    - generic [ref=e258]: delete
+            - row "Protocol_58415 Active - 4/22/26, 9:57 AM content_copy edit delete" [ref=e259]:
+              - cell "Protocol_58415" [ref=e260]:
+                - heading "Protocol_58415" [level=6] [ref=e261]:
+                  - link "Protocol_58415" [ref=e262]:
+                    - /url: /protocols/69a06db581619377202351
+              - cell "Active" [ref=e263]
+              - cell "-" [ref=e264]
+              - cell [ref=e265]
+              - cell "4/22/26, 9:57 AM" [ref=e266]
+              - cell "content_copy edit delete" [ref=e267]:
+                - generic [ref=e268]:
+                  - button "content_copy" [ref=e271]:
+                    - generic [ref=e272]: content_copy
+                  - button "edit" [ref=e274]:
+                    - generic [ref=e275]: edit
+                  - button "delete" [ref=e277]:
+                    - generic [ref=e278]: delete
+            - row "Protocol_49348 Active - 2/26/26, 6:58 PM content_copy edit delete" [ref=e279]:
+              - cell "Protocol_49348" [ref=e280]:
+                - heading "Protocol_49348" [level=6] [ref=e281]:
+                  - link "Protocol_49348" [ref=e282]:
+                    - /url: /protocols/69a06da4b99a9265837614
+              - cell "Active" [ref=e283]
+              - cell "-" [ref=e284]
+              - cell [ref=e285]
+              - cell "2/26/26, 6:58 PM" [ref=e286]
+              - cell "content_copy edit delete" [ref=e287]:
+                - generic [ref=e288]:
+                  - button "content_copy" [ref=e291]:
+                    - generic [ref=e292]: content_copy
+                  - button "edit" [ref=e294]:
+                    - generic [ref=e295]: edit
+                  - button "delete" [ref=e297]:
+                    - generic [ref=e298]: delete
+            - row "Protocol_45717 Active - 2/26/26, 6:58 PM content_copy edit delete" [ref=e299]:
+              - cell "Protocol_45717" [ref=e300]:
+                - heading "Protocol_45717" [level=6] [ref=e301]:
+                  - link "Protocol_45717" [ref=e302]:
+                    - /url: /protocols/69a06d9daccf5571524527
+              - cell "Active" [ref=e303]
+              - cell "-" [ref=e304]
+              - cell [ref=e305]
+              - cell "2/26/26, 6:58 PM" [ref=e306]
+              - cell "content_copy edit delete" [ref=e307]:
+                - generic [ref=e308]:
+                  - button "content_copy" [ref=e311]:
+                    - generic [ref=e312]: content_copy
+                  - button "edit" [ref=e314]:
+                    - generic [ref=e315]: edit
+                  - button "delete" [ref=e317]:
+                    - generic [ref=e318]: delete
+            - row "Protocol_54083 Active - 2/26/26, 6:58 PM content_copy edit delete" [ref=e319]:
+              - cell "Protocol_54083" [ref=e320]:
+                - heading "Protocol_54083" [level=6] [ref=e321]:
+                  - link "Protocol_54083" [ref=e322]:
+                    - /url: /protocols/69a06d932e53d267748836
+              - cell "Active" [ref=e323]
+              - cell "-" [ref=e324]
+              - cell [ref=e325]
+              - cell "2/26/26, 6:58 PM" [ref=e326]
+              - cell "content_copy edit delete" [ref=e327]:
+                - generic [ref=e328]:
+                  - button "content_copy" [ref=e331]:
+                    - generic [ref=e332]: content_copy
+                  - button "edit" [ref=e334]:
+                    - generic [ref=e335]: edit
+                  - button "delete" [ref=e337]:
+                    - generic [ref=e338]: delete
+            - row "Protocol_71479 Active - 2/26/26, 6:58 PM content_copy edit delete" [ref=e339]:
+              - cell "Protocol_71479" [ref=e340]:
+                - heading "Protocol_71479" [level=6] [ref=e341]:
+                  - link "Protocol_71479" [ref=e342]:
+                    - /url: /protocols/69a06d8c5f1dd629348620
+              - cell "Active" [ref=e343]
+              - cell "-" [ref=e344]
+              - cell [ref=e345]
+              - cell "2/26/26, 6:58 PM" [ref=e346]
+              - cell "content_copy edit delete" [ref=e347]:
+                - generic [ref=e348]:
+                  - button "content_copy" [ref=e351]:
+                    - generic [ref=e352]: content_copy
+                  - button "edit" [ref=e354]:
+                    - generic [ref=e355]: edit
+                  - button "delete" [ref=e357]:
+                    - generic [ref=e358]: delete
+            - row "Protocol_55186 Active - 2/26/26, 6:57 PM content_copy edit delete" [ref=e359]:
+              - cell "Protocol_55186" [ref=e360]:
+                - heading "Protocol_55186" [level=6] [ref=e361]:
+                  - link "Protocol_55186" [ref=e362]:
+                    - /url: /protocols/69a06d7b36d0b747504953
+              - cell "Active" [ref=e363]
+              - cell "-" [ref=e364]
+              - cell [ref=e365]
+              - cell "2/26/26, 6:57 PM" [ref=e366]
+              - cell "content_copy edit delete" [ref=e367]:
+                - generic [ref=e368]:
+                  - button "content_copy" [ref=e371]:
+                    - generic [ref=e372]: content_copy
+                  - button "edit" [ref=e374]:
+                    - generic [ref=e375]: edit
+                  - button "delete" [ref=e377]:
+                    - generic [ref=e378]: delete
+            - row "Protocol_304 Active - 2/26/26, 6:57 PM content_copy edit delete" [ref=e379]:
+              - cell "Protocol_304" [ref=e380]:
+                - heading "Protocol_304" [level=6] [ref=e381]:
+                  - link "Protocol_304" [ref=e382]:
+                    - /url: /protocols/69a06d65f2887058083754
+              - cell "Active" [ref=e383]
+              - cell "-" [ref=e384]
+              - cell [ref=e385]
+              - cell "2/26/26, 6:57 PM" [ref=e386]
+              - cell "content_copy edit delete" [ref=e387]:
+                - generic [ref=e388]:
+                  - button "content_copy" [ref=e391]:
+                    - generic [ref=e392]: content_copy
+                  - button "edit" [ref=e394]:
+                    - generic [ref=e395]: edit
+                  - button "delete" [ref=e397]:
+                    - generic [ref=e398]: delete
+            - row "Protocol_61867 Active - 2/26/26, 6:57 PM content_copy edit delete" [ref=e399]:
+              - cell "Protocol_61867" [ref=e400]:
+                - heading "Protocol_61867" [level=6] [ref=e401]:
+                  - link "Protocol_61867" [ref=e402]:
+                    - /url: /protocols/69a06d5cb0ebd408863103
+              - cell "Active" [ref=e403]
+              - cell "-" [ref=e404]
+              - cell [ref=e405]
+              - cell "2/26/26, 6:57 PM" [ref=e406]
+              - cell "content_copy edit delete" [ref=e407]:
+                - generic [ref=e408]:
+                  - button "content_copy" [ref=e411]:
+                    - generic [ref=e412]: content_copy
+                  - button "edit" [ref=e414]:
+                    - generic [ref=e415]: edit
+                  - button "delete" [ref=e417]:
+                    - generic [ref=e418]: delete
+            - row "Protocol_59583 Active - 2/26/26, 6:57 PM content_copy edit delete" [ref=e419]:
+              - cell "Protocol_59583" [ref=e420]:
+                - heading "Protocol_59583" [level=6] [ref=e421]:
+                  - link "Protocol_59583" [ref=e422]:
+                    - /url: /protocols/69a06d5313f3c558139661
+              - cell "Active" [ref=e423]
+              - cell "-" [ref=e424]
+              - cell [ref=e425]
+              - cell "2/26/26, 6:57 PM" [ref=e426]
+              - cell "content_copy edit delete" [ref=e427]:
+                - generic [ref=e428]:
+                  - button "content_copy" [ref=e431]:
+                    - generic [ref=e432]: content_copy
+                  - button "edit" [ref=e434]:
+                    - generic [ref=e435]: edit
+                  - button "delete" [ref=e437]:
+                    - generic [ref=e438]: delete
+            - row "Protocol_48876 Active - 2/26/26, 6:57 PM content_copy edit delete" [ref=e439]:
+              - cell "Protocol_48876" [ref=e440]:
+                - heading "Protocol_48876" [level=6] [ref=e441]:
+                  - link "Protocol_48876" [ref=e442]:
+                    - /url: /protocols/69a06d4d9b30c120766909
+              - cell "Active" [ref=e443]
+              - cell "-" [ref=e444]
+              - cell [ref=e445]
+              - cell "2/26/26, 6:57 PM" [ref=e446]
+              - cell "content_copy edit delete" [ref=e447]:
+                - generic [ref=e448]:
+                  - button "content_copy" [ref=e451]:
+                    - generic [ref=e452]: content_copy
+                  - button "edit" [ref=e454]:
+                    - generic [ref=e455]: edit
+                  - button "delete" [ref=e457]:
+                    - generic [ref=e458]: delete
+            - row "UpdatedProtocolName_5355 Inactive - This is updated protocol Description 2/26/26, 6:56 PM content_copy edit delete" [ref=e459]:
+              - cell "UpdatedProtocolName_5355" [ref=e460]:
+                - heading "UpdatedProtocolName_5355" [level=6] [ref=e461]:
+                  - link "UpdatedProtocolName_5355" [ref=e462]:
+                    - /url: /protocols/69a06d45b76cd382559128
+              - cell "Inactive" [ref=e463]
+              - cell "-" [ref=e464]
+              - cell "This is updated protocol Description" [ref=e465]
+              - cell "2/26/26, 6:56 PM" [ref=e466]
+              - cell "content_copy edit delete" [ref=e467]:
+                - generic [ref=e468]:
+                  - button "content_copy" [ref=e471]:
+                    - generic [ref=e472]: content_copy
+                  - button "edit" [ref=e474]:
+                    - generic [ref=e475]: edit
+                  - button "delete" [ref=e477]:
+                    - generic [ref=e478]: delete
+            - row "Protocol_48303 Active - 2/26/26, 6:56 PM content_copy edit delete" [ref=e479]:
+              - cell "Protocol_48303" [ref=e480]:
+                - heading "Protocol_48303" [level=6] [ref=e481]:
+                  - link "Protocol_48303" [ref=e482]:
+                    - /url: /protocols/69a06d3f35bb6260148919
+              - cell "Active" [ref=e483]
+              - cell "-" [ref=e484]
+              - cell [ref=e485]
+              - cell "2/26/26, 6:56 PM" [ref=e486]
+              - cell "content_copy edit delete" [ref=e487]:
+                - generic [ref=e488]:
+                  - button "content_copy" [ref=e491]:
+                    - generic [ref=e492]: content_copy
+                  - button "edit" [ref=e494]:
+                    - generic [ref=e495]: edit
+                  - button "delete" [ref=e497]:
+                    - generic [ref=e498]: delete
+            - row "UpdatedProtocolName_38533 Inactive - Updated Protocol Name 2/26/26, 6:56 PM content_copy edit delete" [ref=e499]:
+              - cell "UpdatedProtocolName_38533" [ref=e500]:
+                - heading "UpdatedProtocolName_38533" [level=6] [ref=e501]:
+                  - link "UpdatedProtocolName_38533" [ref=e502]:
+                    - /url: /protocols/69a06d36cf820782674992
+              - cell "Inactive" [ref=e503]
+              - cell "-" [ref=e504]
+              - cell "Updated Protocol Name" [ref=e505]
+              - cell "2/26/26, 6:56 PM" [ref=e506]
+              - cell "content_copy edit delete" [ref=e507]:
+                - generic [ref=e508]:
+                  - button "content_copy" [ref=e511]:
+                    - generic [ref=e512]: content_copy
+                  - button "edit" [ref=e514]:
+                    - generic [ref=e515]: edit
+                  - button "delete" [ref=e517]:
+                    - generic [ref=e518]: delete
+            - row "CloneProtocol_68884 Active - 2/26/26, 6:56 PM content_copy edit delete" [ref=e519]:
+              - cell "CloneProtocol_68884" [ref=e520]:
+                - heading "CloneProtocol_68884" [level=6] [ref=e521]:
+                  - link "CloneProtocol_68884" [ref=e522]:
+                    - /url: /protocols/69a06d315fece921567176
+              - cell "Active" [ref=e523]
+              - cell "-" [ref=e524]
+              - cell [ref=e525]
+              - cell "2/26/26, 6:56 PM" [ref=e526]
+              - cell "content_copy edit delete" [ref=e527]:
+                - generic [ref=e528]:
+                  - button "content_copy" [ref=e531]:
+                    - generic [ref=e532]: content_copy
+                  - button "edit" [ref=e534]:
+                    - generic [ref=e535]: edit
+                  - button "delete" [ref=e537]:
+                    - generic [ref=e538]: delete
+            - row "Protocol_80771 Active - 2/26/26, 6:56 PM content_copy edit delete" [ref=e539]:
+              - cell "Protocol_80771" [ref=e540]:
+                - heading "Protocol_80771" [level=6] [ref=e541]:
+                  - link "Protocol_80771" [ref=e542]:
+                    - /url: /protocols/69a06d2e8b141225874173
+              - cell "Active" [ref=e543]
+              - cell "-" [ref=e544]
+              - cell [ref=e545]
+              - cell "2/26/26, 6:56 PM" [ref=e546]
+              - cell "content_copy edit delete" [ref=e547]:
+                - generic [ref=e548]:
+                  - button "content_copy" [ref=e551]:
+                    - generic [ref=e552]: content_copy
+                  - button "edit" [ref=e554]:
+                    - generic [ref=e555]: edit
+                  - button "delete" [ref=e557]:
+                    - generic [ref=e558]: delete
+            - row "Protocol_72654 Active - 2/26/26, 6:56 PM content_copy edit delete" [ref=e559]:
+              - cell "Protocol_72654" [ref=e560]:
+                - heading "Protocol_72654" [level=6] [ref=e561]:
+                  - link "Protocol_72654" [ref=e562]:
+                    - /url: /protocols/69a06d28424f6483380833
+              - cell "Active" [ref=e563]
+              - cell "-" [ref=e564]
+              - cell [ref=e565]
+              - cell "2/26/26, 6:56 PM" [ref=e566]
+              - cell "content_copy edit delete" [ref=e567]:
+                - generic [ref=e568]:
+                  - button "content_copy" [ref=e571]:
+                    - generic [ref=e572]: content_copy
+                  - button "edit" [ref=e574]:
+                    - generic [ref=e575]: edit
+                  - button "delete" [ref=e577]:
+                    - generic [ref=e578]: delete
+            - row "Protocol_81194 Active - 2/26/26, 6:48 PM content_copy edit delete" [ref=e579]:
+              - cell "Protocol_81194" [ref=e580]:
+                - heading "Protocol_81194" [level=6] [ref=e581]:
+                  - link "Protocol_81194" [ref=e582]:
+                    - /url: /protocols/69a06b5ad8520963460815
+              - cell "Active" [ref=e583]
+              - cell "-" [ref=e584]
+              - cell [ref=e585]
+              - cell "2/26/26, 6:48 PM" [ref=e586]
+              - cell "content_copy edit delete" [ref=e587]:
+                - generic [ref=e588]:
+                  - button "content_copy" [ref=e591]:
+                    - generic [ref=e592]: content_copy
+                  - button "edit" [ref=e594]:
+                    - generic [ref=e595]: edit
+                  - button "delete" [ref=e597]:
+                    - generic [ref=e598]: delete
+            - row "Protocol_72421 Active - 2/26/26, 6:48 PM content_copy edit delete" [ref=e599]:
+              - cell "Protocol_72421" [ref=e600]:
+                - heading "Protocol_72421" [level=6] [ref=e601]:
+                  - link "Protocol_72421" [ref=e602]:
+                    - /url: /protocols/69a06b555707a283988032
+              - cell "Active" [ref=e603]
+              - cell "-" [ref=e604]
+              - cell [ref=e605]
+              - cell "2/26/26, 6:48 PM" [ref=e606]
+              - cell "content_copy edit delete" [ref=e607]:
+                - generic [ref=e608]:
+                  - button "content_copy" [ref=e611]:
+                    - generic [ref=e612]: content_copy
+                  - button "edit" [ref=e614]:
+                    - generic [ref=e615]: edit
+                  - button "delete" [ref=e617]:
+                    - generic [ref=e618]: delete
+            - row "Protocol_62787 Active - 2/26/26, 6:48 PM content_copy edit delete" [ref=e619]:
+              - cell "Protocol_62787" [ref=e620]:
+                - heading "Protocol_62787" [level=6] [ref=e621]:
+                  - link "Protocol_62787" [ref=e622]:
+                    - /url: /protocols/69a06b3edff01706502461
+              - cell "Active" [ref=e623]
+              - cell "-" [ref=e624]
+              - cell [ref=e625]
+              - cell "2/26/26, 6:48 PM" [ref=e626]
+              - cell "content_copy edit delete" [ref=e627]:
+                - generic [ref=e628]:
+                  - button "content_copy" [ref=e631]:
+                    - generic [ref=e632]: content_copy
+                  - button "edit" [ref=e634]:
+                    - generic [ref=e635]: edit
+                  - button "delete" [ref=e637]:
+                    - generic [ref=e638]: delete
+            - row "Protocol_74435 Active - 2/26/26, 6:47 PM content_copy edit delete" [ref=e639]:
+              - cell "Protocol_74435" [ref=e640]:
+                - heading "Protocol_74435" [level=6] [ref=e641]:
+                  - link "Protocol_74435" [ref=e642]:
+                    - /url: /protocols/69a06b23d5669521449644
+              - cell "Active" [ref=e643]
+              - cell "-" [ref=e644]
+              - cell [ref=e645]
+              - cell "2/26/26, 6:47 PM" [ref=e646]
+              - cell "content_copy edit delete" [ref=e647]:
+                - generic [ref=e648]:
+                  - button "content_copy" [ref=e651]:
+                    - generic [ref=e652]: content_copy
+                  - button "edit" [ref=e654]:
+                    - generic [ref=e655]: edit
+                  - button "delete" [ref=e657]:
+                    - generic [ref=e658]: delete
+            - row "Protocol_31999 Active - 2/26/26, 6:47 PM content_copy edit delete" [ref=e659]:
+              - cell "Protocol_31999" [ref=e660]:
+                - heading "Protocol_31999" [level=6] [ref=e661]:
+                  - link "Protocol_31999" [ref=e662]:
+                    - /url: /protocols/69a06b1c9de48420571033
+              - cell "Active" [ref=e663]
+              - cell "-" [ref=e664]
+              - cell [ref=e665]
+              - cell "2/26/26, 6:47 PM" [ref=e666]
+              - cell "content_copy edit delete" [ref=e667]:
+                - generic [ref=e668]:
+                  - button "content_copy" [ref=e671]:
+                    - generic [ref=e672]: content_copy
+                  - button "edit" [ref=e674]:
+                    - generic [ref=e675]: edit
+                  - button "delete" [ref=e677]:
+                    - generic [ref=e678]: delete
+            - row "Protocol_58273 Active - 2/26/26, 6:47 PM content_copy edit delete" [ref=e679]:
+              - cell "Protocol_58273" [ref=e680]:
+                - heading "Protocol_58273" [level=6] [ref=e681]:
+                  - link "Protocol_58273" [ref=e682]:
+                    - /url: /protocols/69a06b124d323097485128
+              - cell "Active" [ref=e683]
+              - cell "-" [ref=e684]
+              - cell [ref=e685]
+              - cell "2/26/26, 6:47 PM" [ref=e686]
+              - cell "content_copy edit delete" [ref=e687]:
+                - generic [ref=e688]:
+                  - button "content_copy" [ref=e691]:
+                    - generic [ref=e692]: content_copy
+                  - button "edit" [ref=e694]:
+                    - generic [ref=e695]: edit
+                  - button "delete" [ref=e697]:
+                    - generic [ref=e698]: delete
+            - row "Protocol_88430 Active - 2/26/26, 6:47 PM content_copy edit delete" [ref=e699]:
+              - cell "Protocol_88430" [ref=e700]:
+                - heading "Protocol_88430" [level=6] [ref=e701]:
+                  - link "Protocol_88430" [ref=e702]:
+                    - /url: /protocols/69a06b01959cd443336216
+              - cell "Active" [ref=e703]
+              - cell "-" [ref=e704]
+              - cell [ref=e705]
+              - cell "2/26/26, 6:47 PM" [ref=e706]
+              - cell "content_copy edit delete" [ref=e707]:
+                - generic [ref=e708]:
+                  - button "content_copy" [ref=e711]:
+                    - generic [ref=e712]: content_copy
+                  - button "edit" [ref=e714]:
+                    - generic [ref=e715]: edit
+                  - button "delete" [ref=e717]:
+                    - generic [ref=e718]: delete
+            - row "Protocol_68490 Active - 2/26/26, 6:47 PM content_copy edit delete" [ref=e719]:
+              - cell "Protocol_68490" [ref=e720]:
+                - heading "Protocol_68490" [level=6] [ref=e721]:
+                  - link "Protocol_68490" [ref=e722]:
+                    - /url: /protocols/69a06af50950a499677356
+              - cell "Active" [ref=e723]
+              - cell "-" [ref=e724]
+              - cell [ref=e725]
+              - cell "2/26/26, 6:47 PM" [ref=e726]
+              - cell "content_copy edit delete" [ref=e727]:
+                - generic [ref=e728]:
+                  - button "content_copy" [ref=e731]:
+                    - generic [ref=e732]: content_copy
+                  - button "edit" [ref=e734]:
+                    - generic [ref=e735]: edit
+                  - button "delete" [ref=e737]:
+                    - generic [ref=e738]: delete
+            - row "UpdatedProtocolName_89529 Inactive - This is updated protocol Description 2/26/26, 6:46 PM content_copy edit delete" [ref=e739]:
+              - cell "UpdatedProtocolName_89529" [ref=e740]:
+                - heading "UpdatedProtocolName_89529" [level=6] [ref=e741]:
+                  - link "UpdatedProtocolName_89529" [ref=e742]:
+                    - /url: /protocols/69a06ae71cf42553327338
+              - cell "Inactive" [ref=e743]
+              - cell "-" [ref=e744]
+              - cell "This is updated protocol Description" [ref=e745]
+              - cell "2/26/26, 6:46 PM" [ref=e746]
+              - cell "content_copy edit delete" [ref=e747]:
+                - generic [ref=e748]:
+                  - button "content_copy" [ref=e751]:
+                    - generic [ref=e752]: content_copy
+                  - button "edit" [ref=e754]:
+                    - generic [ref=e755]: edit
+                  - button "delete" [ref=e757]:
+                    - generic [ref=e758]: delete
+            - row "UpdatedProtocolName_99424 Inactive - This is updated protocol Description 2/26/26, 6:46 PM content_copy edit delete" [ref=e759]:
+              - cell "UpdatedProtocolName_99424" [ref=e760]:
+                - heading "UpdatedProtocolName_99424" [level=6] [ref=e761]:
+                  - link "UpdatedProtocolName_99424" [ref=e762]:
+                    - /url: /protocols/69a06ad6aad78060830100
+              - cell "Inactive" [ref=e763]
+              - cell "-" [ref=e764]
+              - cell "This is updated protocol Description" [ref=e765]
+              - cell "2/26/26, 6:46 PM" [ref=e766]
+              - cell "content_copy edit delete" [ref=e767]:
+                - generic [ref=e768]:
+                  - button "content_copy" [ref=e771]:
+                    - generic [ref=e772]: content_copy
+                  - button "edit" [ref=e774]:
+                    - generic [ref=e775]: edit
+                  - button "delete" [ref=e777]:
+                    - generic [ref=e778]: delete
+            - row "Protocol_65012 Active - 4/22/26, 9:57 AM content_copy edit delete" [ref=e779]:
+              - cell "Protocol_65012" [ref=e780]:
+                - heading "Protocol_65012" [level=6] [ref=e781]:
+                  - link "Protocol_65012" [ref=e782]:
+                    - /url: /protocols/69a06ad24f0b2747135298
+              - cell "Active" [ref=e783]
+              - cell "-" [ref=e784]
+              - cell [ref=e785]
+              - cell "4/22/26, 9:57 AM" [ref=e786]
+              - cell "content_copy edit delete" [ref=e787]:
+                - generic [ref=e788]:
+                  - button "content_copy" [ref=e791]:
+                    - generic [ref=e792]: content_copy
+                  - button "edit" [ref=e794]:
+                    - generic [ref=e795]: edit
+                  - button "delete" [ref=e797]:
+                    - generic [ref=e798]: delete
+            - row "UpdatedProtocolName_8364 Inactive - This is updated protocol Description 2/26/26, 6:46 PM content_copy edit delete" [ref=e799]:
+              - cell "UpdatedProtocolName_8364" [ref=e800]:
+                - heading "UpdatedProtocolName_8364" [level=6] [ref=e801]:
+                  - link "UpdatedProtocolName_8364" [ref=e802]:
+                    - /url: /protocols/69a06ac6cdf25046500836
+              - cell "Inactive" [ref=e803]
+              - cell "-" [ref=e804]
+              - cell "This is updated protocol Description" [ref=e805]
+              - cell "2/26/26, 6:46 PM" [ref=e806]
+              - cell "content_copy edit delete" [ref=e807]:
+                - generic [ref=e808]:
+                  - button "content_copy" [ref=e811]:
+                    - generic [ref=e812]: content_copy
+                  - button "edit" [ref=e814]:
+                    - generic [ref=e815]: edit
+                  - button "delete" [ref=e817]:
+                    - generic [ref=e818]: delete
+            - row "Protocol_87153 Active - 2/26/26, 6:46 PM content_copy edit delete" [ref=e819]:
+              - cell "Protocol_87153" [ref=e820]:
+                - heading "Protocol_87153" [level=6] [ref=e821]:
+                  - link "Protocol_87153" [ref=e822]:
+                    - /url: /protocols/69a06ac01cbcb775550707
+              - cell "Active" [ref=e823]
+              - cell "-" [ref=e824]
+              - cell [ref=e825]
+              - cell "2/26/26, 6:46 PM" [ref=e826]
+              - cell "content_copy edit delete" [ref=e827]:
+                - generic [ref=e828]:
+                  - button "content_copy" [ref=e831]:
+                    - generic [ref=e832]: content_copy
+                  - button "edit" [ref=e834]:
+                    - generic [ref=e835]: edit
+                  - button "delete" [ref=e837]:
+                    - generic [ref=e838]: delete
+            - row "Protocol_7897 Active - 2/26/26, 6:46 PM content_copy edit delete" [ref=e839]:
+              - cell "Protocol_7897" [ref=e840]:
+                - heading "Protocol_7897" [level=6] [ref=e841]:
+                  - link "Protocol_7897" [ref=e842]:
+                    - /url: /protocols/69a06aba32222296588691
+              - cell "Active" [ref=e843]
+              - cell "-" [ref=e844]
+              - cell [ref=e845]
+              - cell "2/26/26, 6:46 PM" [ref=e846]
+              - cell "content_copy edit delete" [ref=e847]:
+                - generic [ref=e848]:
+                  - button "content_copy" [ref=e851]:
+                    - generic [ref=e852]: content_copy
+                  - button "edit" [ref=e854]:
+                    - generic [ref=e855]: edit
+                  - button "delete" [ref=e857]:
+                    - generic [ref=e858]: delete
+            - row "Protocol_67932 Active - 2/26/26, 6:46 PM content_copy edit delete" [ref=e859]:
+              - cell "Protocol_67932" [ref=e860]:
+                - heading "Protocol_67932" [level=6] [ref=e861]:
+                  - link "Protocol_67932" [ref=e862]:
+                    - /url: /protocols/69a06ab95b28b843246261
+              - cell "Active" [ref=e863]
+              - cell "-" [ref=e864]
+              - cell [ref=e865]
+              - cell "2/26/26, 6:46 PM" [ref=e866]
+              - cell "content_copy edit delete" [ref=e867]:
+                - generic [ref=e868]:
+                  - button "content_copy" [ref=e871]:
+                    - generic [ref=e872]: content_copy
+                  - button "edit" [ref=e874]:
+                    - generic [ref=e875]: edit
+                  - button "delete" [ref=e877]:
+                    - generic [ref=e878]: delete
+            - row "UpdatedProtocolName_29242 Inactive - Updated Protocol Name 2/26/26, 6:45 PM content_copy edit delete" [ref=e879]:
+              - cell "UpdatedProtocolName_29242" [ref=e880]:
+                - heading "UpdatedProtocolName_29242" [level=6] [ref=e881]:
+                  - link "UpdatedProtocolName_29242" [ref=e882]:
+                    - /url: /protocols/69a06aaa6837c780065841
+              - cell "Inactive" [ref=e883]
+              - cell "-" [ref=e884]
+              - cell "Updated Protocol Name" [ref=e885]
+              - cell "2/26/26, 6:45 PM" [ref=e886]
+              - cell "content_copy edit delete" [ref=e887]:
+                - generic [ref=e888]:
+                  - button "content_copy" [ref=e891]:
+                    - generic [ref=e892]: content_copy
+                  - button "edit" [ref=e894]:
+                    - generic [ref=e895]: edit
+                  - button "delete" [ref=e897]:
+                    - generic [ref=e898]: delete
+            - row "Protocol_62072 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e899]:
+              - cell "Protocol_62072" [ref=e900]:
+                - heading "Protocol_62072" [level=6] [ref=e901]:
+                  - link "Protocol_62072" [ref=e902]:
+                    - /url: /protocols/69a06aa8caa2d365580286
+              - cell "Active" [ref=e903]
+              - cell "-" [ref=e904]
+              - cell [ref=e905]
+              - cell "2/26/26, 6:45 PM" [ref=e906]
+              - cell "content_copy edit delete" [ref=e907]:
+                - generic [ref=e908]:
+                  - button "content_copy" [ref=e911]:
+                    - generic [ref=e912]: content_copy
+                  - button "edit" [ref=e914]:
+                    - generic [ref=e915]: edit
+                  - button "delete" [ref=e917]:
+                    - generic [ref=e918]: delete
+            - row "CloneProtocol_40703 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e919]:
+              - cell "CloneProtocol_40703" [ref=e920]:
+                - heading "CloneProtocol_40703" [level=6] [ref=e921]:
+                  - link "CloneProtocol_40703" [ref=e922]:
+                    - /url: /protocols/69a06a9d50104972905016
+              - cell "Active" [ref=e923]
+              - cell "-" [ref=e924]
+              - cell [ref=e925]
+              - cell "2/26/26, 6:45 PM" [ref=e926]
+              - cell "content_copy edit delete" [ref=e927]:
+                - generic [ref=e928]:
+                  - button "content_copy" [ref=e931]:
+                    - generic [ref=e932]: content_copy
+                  - button "edit" [ref=e934]:
+                    - generic [ref=e935]: edit
+                  - button "delete" [ref=e937]:
+                    - generic [ref=e938]: delete
+            - row "Protocol_22656 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e939]:
+              - cell "Protocol_22656" [ref=e940]:
+                - heading "Protocol_22656" [level=6] [ref=e941]:
+                  - link "Protocol_22656" [ref=e942]:
+                    - /url: /protocols/69a06a98ba1a0070722293
+              - cell "Active" [ref=e943]
+              - cell "-" [ref=e944]
+              - cell [ref=e945]
+              - cell "2/26/26, 6:45 PM" [ref=e946]
+              - cell "content_copy edit delete" [ref=e947]:
+                - generic [ref=e948]:
+                  - button "content_copy" [ref=e951]:
+                    - generic [ref=e952]: content_copy
+                  - button "edit" [ref=e954]:
+                    - generic [ref=e955]: edit
+                  - button "delete" [ref=e957]:
+                    - generic [ref=e958]: delete
+            - row "Protocol_33919 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e959]:
+              - cell "Protocol_33919" [ref=e960]:
+                - heading "Protocol_33919" [level=6] [ref=e961]:
+                  - link "Protocol_33919" [ref=e962]:
+                    - /url: /protocols/69a06a97d7032955381939
+              - cell "Active" [ref=e963]
+              - cell "-" [ref=e964]
+              - cell [ref=e965]
+              - cell "2/26/26, 6:45 PM" [ref=e966]
+              - cell "content_copy edit delete" [ref=e967]:
+                - generic [ref=e968]:
+                  - button "content_copy" [ref=e971]:
+                    - generic [ref=e972]: content_copy
+                  - button "edit" [ref=e974]:
+                    - generic [ref=e975]: edit
+                  - button "delete" [ref=e977]:
+                    - generic [ref=e978]: delete
+            - row "Protocol_46223 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e979]:
+              - cell "Protocol_46223" [ref=e980]:
+                - heading "Protocol_46223" [level=6] [ref=e981]:
+                  - link "Protocol_46223" [ref=e982]:
+                    - /url: /protocols/69a06a8c66e23498993831
+              - cell "Active" [ref=e983]
+              - cell "-" [ref=e984]
+              - cell [ref=e985]
+              - cell "2/26/26, 6:45 PM" [ref=e986]
+              - cell "content_copy edit delete" [ref=e987]:
+                - generic [ref=e988]:
+                  - button "content_copy" [ref=e991]:
+                    - generic [ref=e992]: content_copy
+                  - button "edit" [ref=e994]:
+                    - generic [ref=e995]: edit
+                  - button "delete" [ref=e997]:
+                    - generic [ref=e998]: delete
+            - row "Protocol_81685 Active - 2/26/26, 6:45 PM content_copy edit delete" [ref=e999]:
+              - cell "Protocol_81685" [ref=e1000]:
+                - heading "Protocol_81685" [level=6] [ref=e1001]:
+                  - link "Protocol_81685" [ref=e1002]:
+                    - /url: /protocols/69a06a8aa258b414633266
+              - cell "Active" [ref=e1003]
+              - cell "-" [ref=e1004]
+              - cell [ref=e1005]
+              - cell "2/26/26, 6:45 PM" [ref=e1006]
+              - cell "content_copy edit delete" [ref=e1007]:
+                - generic [ref=e1008]:
+                  - button "content_copy" [ref=e1011]:
+                    - generic [ref=e1012]: content_copy
+                  - button "edit" [ref=e1014]:
+                    - generic [ref=e1015]: edit
+                  - button "delete" [ref=e1017]:
+                    - generic [ref=e1018]: delete
+            - row "Protocol_73506 Active - 2/26/26, 6:44 PM content_copy edit delete" [ref=e1019]:
+              - cell "Protocol_73506" [ref=e1020]:
+                - heading "Protocol_73506" [level=6] [ref=e1021]:
+                  - link "Protocol_73506" [ref=e1022]:
+                    - /url: /protocols/69a06a72c74a2511273297
+              - cell "Active" [ref=e1023]
+              - cell "-" [ref=e1024]
+              - cell [ref=e1025]
+              - cell "2/26/26, 6:44 PM" [ref=e1026]
+              - cell "content_copy edit delete" [ref=e1027]:
+                - generic [ref=e1028]:
+                  - button "content_copy" [ref=e1031]:
+                    - generic [ref=e1032]: content_copy
+                  - button "edit" [ref=e1034]:
+                    - generic [ref=e1035]: edit
+                  - button "delete" [ref=e1037]:
+                    - generic [ref=e1038]: delete
+            - row "Protocol_21032 Active - 2/26/26, 6:44 PM content_copy edit delete" [ref=e1039]:
+              - cell "Protocol_21032" [ref=e1040]:
+                - heading "Protocol_21032" [level=6] [ref=e1041]:
+                  - link "Protocol_21032" [ref=e1042]:
+                    - /url: /protocols/69a06a6a4bc08130868844
+              - cell "Active" [ref=e1043]
+              - cell "-" [ref=e1044]
+              - cell [ref=e1045]
+              - cell "2/26/26, 6:44 PM" [ref=e1046]
+              - cell "content_copy edit delete" [ref=e1047]:
+                - generic [ref=e1048]:
+                  - button "content_copy" [ref=e1051]:
+                    - generic [ref=e1052]: content_copy
+                  - button "edit" [ref=e1054]:
+                    - generic [ref=e1055]: edit
+                  - button "delete" [ref=e1057]:
+                    - generic [ref=e1058]: delete
+            - row "Protocol_84878 Active - 2/26/26, 6:44 PM content_copy edit delete" [ref=e1059]:
+              - cell "Protocol_84878" [ref=e1060]:
+                - heading "Protocol_84878" [level=6] [ref=e1061]:
+                  - link "Protocol_84878" [ref=e1062]:
+                    - /url: /protocols/69a06a5815fbc017854462
+              - cell "Active" [ref=e1063]
+              - cell "-" [ref=e1064]
+              - cell [ref=e1065]
+              - cell "2/26/26, 6:44 PM" [ref=e1066]
+              - cell "content_copy edit delete" [ref=e1067]:
+                - generic [ref=e1068]:
+                  - button "content_copy" [ref=e1071]:
+                    - generic [ref=e1072]: content_copy
+                  - button "edit" [ref=e1074]:
+                    - generic [ref=e1075]: edit
+                  - button "delete" [ref=e1077]:
+                    - generic [ref=e1078]: delete
+            - row "Protocol_97934 Active - 2/26/26, 6:44 PM content_copy edit delete" [ref=e1079]:
+              - cell "Protocol_97934" [ref=e1080]:
+                - heading "Protocol_97934" [level=6] [ref=e1081]:
+                  - link "Protocol_97934" [ref=e1082]:
+                    - /url: /protocols/69a06a44af685816642083
+              - cell "Active" [ref=e1083]
+              - cell "-" [ref=e1084]
+              - cell [ref=e1085]
+              - cell "2/26/26, 6:44 PM" [ref=e1086]
+              - cell "content_copy edit delete" [ref=e1087]:
+                - generic [ref=e1088]:
+                  - button "content_copy" [ref=e1091]:
+                    - generic [ref=e1092]: content_copy
+                  - button "edit" [ref=e1094]:
+                    - generic [ref=e1095]: edit
+                  - button "delete" [ref=e1097]:
+                    - generic [ref=e1098]: delete
+            - row "Protocol_21994 Active - 2/26/26, 6:43 PM content_copy edit delete" [ref=e1099]:
+              - cell "Protocol_21994" [ref=e1100]:
+                - heading "Protocol_21994" [level=6] [ref=e1101]:
+                  - link "Protocol_21994" [ref=e1102]:
+                    - /url: /protocols/69a06a323e528946580248
+              - cell "Active" [ref=e1103]
+              - cell "-" [ref=e1104]
+              - cell [ref=e1105]
+              - cell "2/26/26, 6:43 PM" [ref=e1106]
+              - cell "content_copy edit delete" [ref=e1107]:
+                - generic [ref=e1108]:
+                  - button "content_copy" [ref=e1111]:
+                    - generic [ref=e1112]: content_copy
+                  - button "edit" [ref=e1114]:
+                    - generic [ref=e1115]: edit
+                  - button "delete" [ref=e1117]:
+                    - generic [ref=e1118]: delete
+            - row "Protocol_7128 Active - 2/26/26, 6:43 PM content_copy edit delete" [ref=e1119]:
+              - cell "Protocol_7128" [ref=e1120]:
+                - heading "Protocol_7128" [level=6] [ref=e1121]:
+                  - link "Protocol_7128" [ref=e1122]:
+                    - /url: /protocols/69a06a2d46ede196759913
+              - cell "Active" [ref=e1123]
+              - cell "-" [ref=e1124]
+              - cell [ref=e1125]
+              - cell "2/26/26, 6:43 PM" [ref=e1126]
+              - cell "content_copy edit delete" [ref=e1127]:
+                - generic [ref=e1128]:
+                  - button "content_copy" [ref=e1131]:
+                    - generic [ref=e1132]: content_copy
+                  - button "edit" [ref=e1134]:
+                    - generic [ref=e1135]: edit
+                  - button "delete" [ref=e1137]:
+                    - generic [ref=e1138]: delete
+            - row "Protocol_37882 Active - 2/26/26, 6:43 PM content_copy edit delete" [ref=e1139]:
+              - cell "Protocol_37882" [ref=e1140]:
+                - heading "Protocol_37882" [level=6] [ref=e1141]:
+                  - link "Protocol_37882" [ref=e1142]:
+                    - /url: /protocols/69a06a24e6b12748637991
+              - cell "Active" [ref=e1143]
+              - cell "-" [ref=e1144]
+              - cell [ref=e1145]
+              - cell "2/26/26, 6:43 PM" [ref=e1146]
+              - cell "content_copy edit delete" [ref=e1147]:
+                - generic [ref=e1148]:
+                  - button "content_copy" [ref=e1151]:
+                    - generic [ref=e1152]: content_copy
+                  - button "edit" [ref=e1154]:
+                    - generic [ref=e1155]: edit
+                  - button "delete" [ref=e1157]:
+                    - generic [ref=e1158]: delete
+            - row "UpdatedProtocolName_19241 Inactive - This is updated protocol Description 2/26/26, 6:43 PM content_copy edit delete" [ref=e1159]:
+              - cell "UpdatedProtocolName_19241" [ref=e1160]:
+                - heading "UpdatedProtocolName_19241" [level=6] [ref=e1161]:
+                  - link "UpdatedProtocolName_19241" [ref=e1162]:
+                    - /url: /protocols/69a06a1545427380412449
+              - cell "Inactive" [ref=e1163]
+              - cell "-" [ref=e1164]
+              - cell "This is updated protocol Description" [ref=e1165]
+              - cell "2/26/26, 6:43 PM" [ref=e1166]
+              - cell "content_copy edit delete" [ref=e1167]:
+                - generic [ref=e1168]:
+                  - button "content_copy" [ref=e1171]:
+                    - generic [ref=e1172]: content_copy
+                  - button "edit" [ref=e1174]:
+                    - generic [ref=e1175]: edit
+                  - button "delete" [ref=e1177]:
+                    - generic [ref=e1178]: delete
+            - row "UpdatedProtocolName_2428 Inactive - This is updated protocol Description 2/26/26, 6:42 PM content_copy edit delete" [ref=e1179]:
+              - cell "UpdatedProtocolName_2428" [ref=e1180]:
+                - heading "UpdatedProtocolName_2428" [level=6] [ref=e1181]:
+                  - link "UpdatedProtocolName_2428" [ref=e1182]:
+                    - /url: /protocols/69a069ffd0922038312716
+              - cell "Inactive" [ref=e1183]
+              - cell "-" [ref=e1184]
+              - cell "This is updated protocol Description" [ref=e1185]
+              - cell "2/26/26, 6:42 PM" [ref=e1186]
+              - cell "content_copy edit delete" [ref=e1187]:
+                - generic [ref=e1188]:
+                  - button "content_copy" [ref=e1191]:
+                    - generic [ref=e1192]: content_copy
+                  - button "edit" [ref=e1194]:
+                    - generic [ref=e1195]: edit
+                  - button "delete" [ref=e1197]:
+                    - generic [ref=e1198]: delete
+            - row "UpdatedProtocolName_8698 Inactive - This is updated protocol Description 2/26/26, 6:42 PM content_copy edit delete" [ref=e1199]:
+              - cell "UpdatedProtocolName_8698" [ref=e1200]:
+                - heading "UpdatedProtocolName_8698" [level=6] [ref=e1201]:
+                  - link "UpdatedProtocolName_8698" [ref=e1202]:
+                    - /url: /protocols/69a069eee5816058710728
+              - cell "Inactive" [ref=e1203]
+              - cell "-" [ref=e1204]
+              - cell "This is updated protocol Description" [ref=e1205]
+              - cell "2/26/26, 6:42 PM" [ref=e1206]
+              - cell "content_copy edit delete" [ref=e1207]:
+                - generic [ref=e1208]:
+                  - button "content_copy" [ref=e1211]:
+                    - generic [ref=e1212]: content_copy
+                  - button "edit" [ref=e1214]:
+                    - generic [ref=e1215]: edit
+                  - button "delete" [ref=e1217]:
+                    - generic [ref=e1218]: delete
+            - row "Protocol_86108 Active - 2/26/26, 6:42 PM content_copy edit delete" [ref=e1219]:
+              - cell "Protocol_86108" [ref=e1220]:
+                - heading "Protocol_86108" [level=6] [ref=e1221]:
+                  - link "Protocol_86108" [ref=e1222]:
+                    - /url: /protocols/69a069ed06c26101438472
+              - cell "Active" [ref=e1223]
+              - cell "-" [ref=e1224]
+              - cell [ref=e1225]
+              - cell "2/26/26, 6:42 PM" [ref=e1226]
+              - cell "content_copy edit delete" [ref=e1227]:
+                - generic [ref=e1228]:
+                  - button "content_copy" [ref=e1231]:
+                    - generic [ref=e1232]: content_copy
+                  - button "edit" [ref=e1234]:
+                    - generic [ref=e1235]: edit
+                  - button "delete" [ref=e1237]:
+                    - generic [ref=e1238]: delete
+            - row "Protocol_63748 Active - 2/26/26, 6:42 PM content_copy edit delete" [ref=e1239]:
+              - cell "Protocol_63748" [ref=e1240]:
+                - heading "Protocol_63748" [level=6] [ref=e1241]:
+                  - link "Protocol_63748" [ref=e1242]:
+                    - /url: /protocols/69a069dded0af816697079
+              - cell "Active" [ref=e1243]
+              - cell "-" [ref=e1244]
+              - cell [ref=e1245]
+              - cell "2/26/26, 6:42 PM" [ref=e1246]
+              - cell "content_copy edit delete" [ref=e1247]:
+                - generic [ref=e1248]:
+                  - button "content_copy" [ref=e1251]:
+                    - generic [ref=e1252]: content_copy
+                  - button "edit" [ref=e1254]:
+                    - generic [ref=e1255]: edit
+                  - button "delete" [ref=e1257]:
+                    - generic [ref=e1258]: delete
+            - row "UpdatedProtocolName_36454 Inactive - Updated Protocol Name 2/26/26, 6:42 PM content_copy edit delete" [ref=e1259]:
+              - cell "UpdatedProtocolName_36454" [ref=e1260]:
+                - heading "UpdatedProtocolName_36454" [level=6] [ref=e1261]:
+                  - link "UpdatedProtocolName_36454" [ref=e1262]:
+                    - /url: /protocols/69a069c95bbf7024259217
+              - cell "Inactive" [ref=e1263]
+              - cell "-" [ref=e1264]
+              - cell "Updated Protocol Name" [ref=e1265]
+              - cell "2/26/26, 6:42 PM" [ref=e1266]
+              - cell "content_copy edit delete" [ref=e1267]:
+                - generic [ref=e1268]:
+                  - button "content_copy" [ref=e1271]:
+                    - generic [ref=e1272]: content_copy
+                  - button "edit" [ref=e1274]:
+                    - generic [ref=e1275]: edit
+                  - button "delete" [ref=e1277]:
+                    - generic [ref=e1278]: delete
+            - row "Protocol_84641 Active - 2/26/26, 6:41 PM content_copy edit delete" [ref=e1279]:
+              - cell "Protocol_84641" [ref=e1280]:
+                - heading "Protocol_84641" [level=6] [ref=e1281]:
+                  - link "Protocol_84641" [ref=e1282]:
+                    - /url: /protocols/69a069c5d27e9513466349
+              - cell "Active" [ref=e1283]
+              - cell "-" [ref=e1284]
+              - cell [ref=e1285]
+              - cell "2/26/26, 6:41 PM" [ref=e1286]
+              - cell "content_copy edit delete" [ref=e1287]:
+                - generic [ref=e1288]:
+                  - button "content_copy" [ref=e1291]:
+                    - generic [ref=e1292]: content_copy
+                  - button "edit" [ref=e1294]:
+                    - generic [ref=e1295]: edit
+                  - button "delete" [ref=e1297]:
+                    - generic [ref=e1298]: delete
+            - row "CloneProtocol_78948 Active - 2/26/26, 6:41 PM content_copy edit delete" [ref=e1299]:
+              - cell "CloneProtocol_78948" [ref=e1300]:
+                - heading "CloneProtocol_78948" [level=6] [ref=e1301]:
+                  - link "CloneProtocol_78948" [ref=e1302]:
+                    - /url: /protocols/69a069bc9c2bf663954795
+              - cell "Active" [ref=e1303]
+              - cell "-" [ref=e1304]
+              - cell [ref=e1305]
+              - cell "2/26/26, 6:41 PM" [ref=e1306]
+              - cell "content_copy edit delete" [ref=e1307]:
+                - generic [ref=e1308]:
+                  - button "content_copy" [ref=e1311]:
+                    - generic [ref=e1312]: content_copy
+                  - button "edit" [ref=e1314]:
+                    - generic [ref=e1315]: edit
+                  - button "delete" [ref=e1317]:
+                    - generic [ref=e1318]: delete
+            - row "Protocol_97274 Active - 2/26/26, 6:41 PM content_copy edit delete" [ref=e1319]:
+              - cell "Protocol_97274" [ref=e1320]:
+                - heading "Protocol_97274" [level=6] [ref=e1321]:
+                  - link "Protocol_97274" [ref=e1322]:
+                    - /url: /protocols/69a069b7f174a587153547
+              - cell "Active" [ref=e1323]
+              - cell "-" [ref=e1324]
+              - cell [ref=e1325]
+              - cell "2/26/26, 6:41 PM" [ref=e1326]
+              - cell "content_copy edit delete" [ref=e1327]:
+                - generic [ref=e1328]:
+                  - button "content_copy" [ref=e1331]:
+                    - generic [ref=e1332]: content_copy
+                  - button "edit" [ref=e1334]:
+                    - generic [ref=e1335]: edit
+                  - button "delete" [ref=e1337]:
+                    - generic [ref=e1338]: delete
+            - row "Protocol_3299 Active - 2/26/26, 6:41 PM content_copy edit delete" [ref=e1339]:
+              - cell "Protocol_3299" [ref=e1340]:
+                - heading "Protocol_3299" [level=6] [ref=e1341]:
+                  - link "Protocol_3299" [ref=e1342]:
+                    - /url: /protocols/69a069abc9d5e225107789
+              - cell "Active" [ref=e1343]
+              - cell "-" [ref=e1344]
+              - cell [ref=e1345]
+              - cell "2/26/26, 6:41 PM" [ref=e1346]
+              - cell "content_copy edit delete" [ref=e1347]:
+                - generic [ref=e1348]:
+                  - button "content_copy" [ref=e1351]:
+                    - generic [ref=e1352]: content_copy
+                  - button "edit" [ref=e1354]:
+                    - generic [ref=e1355]: edit
+                  - button "delete" [ref=e1357]:
+                    - generic [ref=e1358]: delete
+            - row "Protocol_21200 Active - 2/26/26, 6:40 PM content_copy edit delete" [ref=e1359]:
+              - cell "Protocol_21200" [ref=e1360]:
+                - heading "Protocol_21200" [level=6] [ref=e1361]:
+                  - link "Protocol_21200" [ref=e1362]:
+                    - /url: /protocols/69a0698a7a6a4264154963
+              - cell "Active" [ref=e1363]
+              - cell "-" [ref=e1364]
+              - cell [ref=e1365]
+              - cell "2/26/26, 6:40 PM" [ref=e1366]
+              - cell "content_copy edit delete" [ref=e1367]:
+                - generic [ref=e1368]:
+                  - button "content_copy" [ref=e1371]:
+                    - generic [ref=e1372]: content_copy
+                  - button "edit" [ref=e1374]:
+                    - generic [ref=e1375]: edit
+                  - button "delete" [ref=e1377]:
+                    - generic [ref=e1378]: delete
+            - row "Protocol_50834 Active - 2/26/26, 6:39 PM content_copy edit delete" [ref=e1379]:
+              - cell "Protocol_50834" [ref=e1380]:
+                - heading "Protocol_50834" [level=6] [ref=e1381]:
+                  - link "Protocol_50834" [ref=e1382]:
+                    - /url: /protocols/69a06948d24cf632241287
+              - cell "Active" [ref=e1383]
+              - cell "-" [ref=e1384]
+              - cell [ref=e1385]
+              - cell "2/26/26, 6:39 PM" [ref=e1386]
+              - cell "content_copy edit delete" [ref=e1387]:
+                - generic [ref=e1388]:
+                  - button "content_copy" [ref=e1391]:
+                    - generic [ref=e1392]: content_copy
+                  - button "edit" [ref=e1394]:
+                    - generic [ref=e1395]: edit
+                  - button "delete" [ref=e1397]:
+                    - generic [ref=e1398]: delete
+            - row "Protocol_57774 Active - 4/22/26, 9:58 AM content_copy edit delete" [ref=e1399]:
+              - cell "Protocol_57774" [ref=e1400]:
+                - heading "Protocol_57774" [level=6] [ref=e1401]:
+                  - link "Protocol_57774" [ref=e1402]:
+                    - /url: /protocols/69a06910acc15471533034
+              - cell "Active" [ref=e1403]
+              - cell "-" [ref=e1404]
+              - cell [ref=e1405]
+              - cell "4/22/26, 9:58 AM" [ref=e1406]
+              - cell "content_copy edit delete" [ref=e1407]:
+                - generic [ref=e1408]:
+                  - button "content_copy" [ref=e1411]:
+                    - generic [ref=e1412]: content_copy
+                  - button "edit" [ref=e1414]:
+                    - generic [ref=e1415]: edit
+                  - button "delete" [ref=e1417]:
+                    - generic [ref=e1418]: delete
+            - row "Protocol_22642 Active - 2/26/26, 6:38 PM content_copy edit delete" [ref=e1419]:
+              - cell "Protocol_22642" [ref=e1420]:
+                - heading "Protocol_22642" [level=6] [ref=e1421]:
+                  - link "Protocol_22642" [ref=e1422]:
+                    - /url: /protocols/69a069074f49f087310251
+              - cell "Active" [ref=e1423]
+              - cell "-" [ref=e1424]
+              - cell [ref=e1425]
+              - cell "2/26/26, 6:38 PM" [ref=e1426]
+              - cell "content_copy edit delete" [ref=e1427]:
+                - generic [ref=e1428]:
+                  - button "content_copy" [ref=e1431]:
+                    - generic [ref=e1432]: content_copy
+                  - button "edit" [ref=e1434]:
+                    - generic [ref=e1435]: edit
+                  - button "delete" [ref=e1437]:
+                    - generic [ref=e1438]: delete
+            - row "Protocol_93102 Active - 2/26/26, 6:38 PM content_copy edit delete" [ref=e1439]:
+              - cell "Protocol_93102" [ref=e1440]:
+                - heading "Protocol_93102" [level=6] [ref=e1441]:
+                  - link "Protocol_93102" [ref=e1442]:
+                    - /url: /protocols/69a068fa8be7d779662920
+              - cell "Active" [ref=e1443]
+              - cell "-" [ref=e1444]
+              - cell [ref=e1445]
+              - cell "2/26/26, 6:38 PM" [ref=e1446]
+              - cell "content_copy edit delete" [ref=e1447]:
+                - generic [ref=e1448]:
+                  - button "content_copy" [ref=e1451]:
+                    - generic [ref=e1452]: content_copy
+                  - button "edit" [ref=e1454]:
+                    - generic [ref=e1455]: edit
+                  - button "delete" [ref=e1457]:
+                    - generic [ref=e1458]: delete
+            - row "Protocol_29801 Active - 2/26/26, 6:38 PM content_copy edit delete" [ref=e1459]:
+              - cell "Protocol_29801" [ref=e1460]:
+                - heading "Protocol_29801" [level=6] [ref=e1461]:
+                  - link "Protocol_29801" [ref=e1462]:
+                    - /url: /protocols/69a068f52af65732528690
+              - cell "Active" [ref=e1463]
+              - cell "-" [ref=e1464]
+              - cell [ref=e1465]
+              - cell "2/26/26, 6:38 PM" [ref=e1466]
+              - cell "content_copy edit delete" [ref=e1467]:
+                - generic [ref=e1468]:
+                  - button "content_copy" [ref=e1471]:
+                    - generic [ref=e1472]: content_copy
+                  - button "edit" [ref=e1474]:
+                    - generic [ref=e1475]: edit
+                  - button "delete" [ref=e1477]:
+                    - generic [ref=e1478]: delete
+            - row "Protocol_12291 Active - 2/26/26, 6:38 PM content_copy edit delete" [ref=e1479]:
+              - cell "Protocol_12291" [ref=e1480]:
+                - heading "Protocol_12291" [level=6] [ref=e1481]:
+                  - link "Protocol_12291" [ref=e1482]:
+                    - /url: /protocols/69a068e76f8a4728080089
+              - cell "Active" [ref=e1483]
+              - cell "-" [ref=e1484]
+              - cell [ref=e1485]
+              - cell "2/26/26, 6:38 PM" [ref=e1486]
+              - cell "content_copy edit delete" [ref=e1487]:
+                - generic [ref=e1488]:
+                  - button "content_copy" [ref=e1491]:
+                    - generic [ref=e1492]: content_copy
+                  - button "edit" [ref=e1494]:
+                    - generic [ref=e1495]: edit
+                  - button "delete" [ref=e1497]:
+                    - generic [ref=e1498]: delete
+            - row "Protocol_54596 Active - 2/26/26, 6:37 PM content_copy edit delete" [ref=e1499]:
+              - cell "Protocol_54596" [ref=e1500]:
+                - heading "Protocol_54596" [level=6] [ref=e1501]:
+                  - link "Protocol_54596" [ref=e1502]:
+                    - /url: /protocols/69a068c407928577582636
+              - cell "Active" [ref=e1503]
+              - cell "-" [ref=e1504]
+              - cell [ref=e1505]
+              - cell "2/26/26, 6:37 PM" [ref=e1506]
+              - cell "content_copy edit delete" [ref=e1507]:
+                - generic [ref=e1508]:
+                  - button "content_copy" [ref=e1511]:
+                    - generic [ref=e1512]: content_copy
+                  - button "edit" [ref=e1514]:
+                    - generic [ref=e1515]: edit
+                  - button "delete" [ref=e1517]:
+                    - generic [ref=e1518]: delete
+            - row "Protocol_98024 Active - 2/26/26, 6:37 PM content_copy edit delete" [ref=e1519]:
+              - cell "Protocol_98024" [ref=e1520]:
+                - heading "Protocol_98024" [level=6] [ref=e1521]:
+                  - link "Protocol_98024" [ref=e1522]:
+                    - /url: /protocols/69a068b4e2c4a683557512
+              - cell "Active" [ref=e1523]
+              - cell "-" [ref=e1524]
+              - cell [ref=e1525]
+              - cell "2/26/26, 6:37 PM" [ref=e1526]
+              - cell "content_copy edit delete" [ref=e1527]:
+                - generic [ref=e1528]:
+                  - button "content_copy" [ref=e1531]:
+                    - generic [ref=e1532]: content_copy
+                  - button "edit" [ref=e1534]:
+                    - generic [ref=e1535]: edit
+                  - button "delete" [ref=e1537]:
+                    - generic [ref=e1538]: delete
+            - row "Protocol_87082 Active - 2/26/26, 6:36 PM content_copy edit delete" [ref=e1539]:
+              - cell "Protocol_87082" [ref=e1540]:
+                - heading "Protocol_87082" [level=6] [ref=e1541]:
+                  - link "Protocol_87082" [ref=e1542]:
+                    - /url: /protocols/69a0687e52509400427870
+              - cell "Active" [ref=e1543]
+              - cell "-" [ref=e1544]
+              - cell [ref=e1545]
+              - cell "2/26/26, 6:36 PM" [ref=e1546]
+              - cell "content_copy edit delete" [ref=e1547]:
+                - generic [ref=e1548]:
+                  - button "content_copy" [ref=e1551]:
+                    - generic [ref=e1552]: content_copy
+                  - button "edit" [ref=e1554]:
+                    - generic [ref=e1555]: edit
+                  - button "delete" [ref=e1557]:
+                    - generic [ref=e1558]: delete
+            - row "Protocol_43580 Active - 2/26/26, 6:36 PM content_copy edit delete" [ref=e1559]:
+              - cell "Protocol_43580" [ref=e1560]:
+                - heading "Protocol_43580" [level=6] [ref=e1561]:
+                  - link "Protocol_43580" [ref=e1562]:
+                    - /url: /protocols/69a06864d9011782463344
+              - cell "Active" [ref=e1563]
+              - cell "-" [ref=e1564]
+              - cell [ref=e1565]
+              - cell "2/26/26, 6:36 PM" [ref=e1566]
+              - cell "content_copy edit delete" [ref=e1567]:
+                - generic [ref=e1568]:
+                  - button "content_copy" [ref=e1571]:
+                    - generic [ref=e1572]: content_copy
+                  - button "edit" [ref=e1574]:
+                    - generic [ref=e1575]: edit
+                  - button "delete" [ref=e1577]:
+                    - generic [ref=e1578]: delete
+            - row "Protocol_27033 Active - 2/26/26, 6:35 PM content_copy edit delete" [ref=e1579]:
+              - cell "Protocol_27033" [ref=e1580]:
+                - heading "Protocol_27033" [level=6] [ref=e1581]:
+                  - link "Protocol_27033" [ref=e1582]:
+                    - /url: /protocols/69a0684955f46874715550
+              - cell "Active" [ref=e1583]
+              - cell "-" [ref=e1584]
+              - cell [ref=e1585]
+              - cell "2/26/26, 6:35 PM" [ref=e1586]
+              - cell "content_copy edit delete" [ref=e1587]:
+                - generic [ref=e1588]:
+                  - button "content_copy" [ref=e1591]:
+                    - generic [ref=e1592]: content_copy
+                  - button "edit" [ref=e1594]:
+                    - generic [ref=e1595]: edit
+                  - button "delete" [ref=e1597]:
+                    - generic [ref=e1598]: delete
+            - row "Protocol_81619 Active - 2/26/26, 6:35 PM content_copy edit delete" [ref=e1599]:
+              - cell "Protocol_81619" [ref=e1600]:
+                - heading "Protocol_81619" [level=6] [ref=e1601]:
+                  - link "Protocol_81619" [ref=e1602]:
+                    - /url: /protocols/69a0683720b3f773233736
+              - cell "Active" [ref=e1603]
+              - cell "-" [ref=e1604]
+              - cell [ref=e1605]
+              - cell "2/26/26, 6:35 PM" [ref=e1606]
+              - cell "content_copy edit delete" [ref=e1607]:
+                - generic [ref=e1608]:
+                  - button "content_copy" [ref=e1611]:
+                    - generic [ref=e1612]: content_copy
+                  - button "edit" [ref=e1614]:
+                    - generic [ref=e1615]: edit
+                  - button "delete" [ref=e1617]:
+                    - generic [ref=e1618]: delete
+            - row "Protocol_20166 Active - 2/26/26, 6:35 PM content_copy edit delete" [ref=e1619]:
+              - cell "Protocol_20166" [ref=e1620]:
+                - heading "Protocol_20166" [level=6] [ref=e1621]:
+                  - link "Protocol_20166" [ref=e1622]:
+                    - /url: /protocols/69a06827b885d124075335
+              - cell "Active" [ref=e1623]
+              - cell "-" [ref=e1624]
+              - cell [ref=e1625]
+              - cell "2/26/26, 6:35 PM" [ref=e1626]
+              - cell "content_copy edit delete" [ref=e1627]:
+                - generic [ref=e1628]:
+                  - button "content_copy" [ref=e1631]:
+                    - generic [ref=e1632]: content_copy
+                  - button "edit" [ref=e1634]:
+                    - generic [ref=e1635]: edit
+                  - button "delete" [ref=e1637]:
+                    - generic [ref=e1638]: delete
+            - row "Protocol_40746 Active - 2/26/26, 6:34 PM content_copy edit delete" [ref=e1639]:
+              - cell "Protocol_40746" [ref=e1640]:
+                - heading "Protocol_40746" [level=6] [ref=e1641]:
+                  - link "Protocol_40746" [ref=e1642]:
+                    - /url: /protocols/69a0681d67ea1953775072
+              - cell "Active" [ref=e1643]
+              - cell "-" [ref=e1644]
+              - cell [ref=e1645]
+              - cell "2/26/26, 6:34 PM" [ref=e1646]
+              - cell "content_copy edit delete" [ref=e1647]:
+                - generic [ref=e1648]:
+                  - button "content_copy" [ref=e1651]:
+                    - generic [ref=e1652]: content_copy
+                  - button "edit" [ref=e1654]:
+                    - generic [ref=e1655]: edit
+                  - button "delete" [ref=e1657]:
+                    - generic [ref=e1658]: delete
+            - row "UpdatedProtocolName_8830 Inactive - This is updated protocol Description 2/26/26, 6:34 PM content_copy edit delete" [ref=e1659]:
+              - cell "UpdatedProtocolName_8830" [ref=e1660]:
+                - heading "UpdatedProtocolName_8830" [level=6] [ref=e1661]:
+                  - link "UpdatedProtocolName_8830" [ref=e1662]:
+                    - /url: /protocols/69a0680faa542638798481
+              - cell "Inactive" [ref=e1663]
+              - cell "-" [ref=e1664]
+              - cell "This is updated protocol Description" [ref=e1665]
+              - cell "2/26/26, 6:34 PM" [ref=e1666]
+              - cell "content_copy edit delete" [ref=e1667]:
+                - generic [ref=e1668]:
+                  - button "content_copy" [ref=e1671]:
+                    - generic [ref=e1672]: content_copy
+                  - button "edit" [ref=e1674]:
+                    - generic [ref=e1675]: edit
+                  - button "delete" [ref=e1677]:
+                    - generic [ref=e1678]: delete
+            - row "UpdatedProtocolName_5032 Inactive - This is updated protocol Description 2/26/26, 6:34 PM content_copy edit delete" [ref=e1679]:
+              - cell "UpdatedProtocolName_5032" [ref=e1680]:
+                - heading "UpdatedProtocolName_5032" [level=6] [ref=e1681]:
+                  - link "UpdatedProtocolName_5032" [ref=e1682]:
+                    - /url: /protocols/69a067fc4109b902494119
+              - cell "Inactive" [ref=e1683]
+              - cell "-" [ref=e1684]
+              - cell "This is updated protocol Description" [ref=e1685]
+              - cell "2/26/26, 6:34 PM" [ref=e1686]
+              - cell "content_copy edit delete" [ref=e1687]:
+                - generic [ref=e1688]:
+                  - button "content_copy" [ref=e1691]:
+                    - generic [ref=e1692]: content_copy
+                  - button "edit" [ref=e1694]:
+                    - generic [ref=e1695]: edit
+                  - button "delete" [ref=e1697]:
+                    - generic [ref=e1698]: delete
+            - row "UpdatedProtocolName_46520 Inactive - This is updated protocol Description 2/26/26, 6:34 PM content_copy edit delete" [ref=e1699]:
+              - cell "UpdatedProtocolName_46520" [ref=e1700]:
+                - heading "UpdatedProtocolName_46520" [level=6] [ref=e1701]:
+                  - link "UpdatedProtocolName_46520" [ref=e1702]:
+                    - /url: /protocols/69a067e93fc1b759254829
+              - cell "Inactive" [ref=e1703]
+              - cell "-" [ref=e1704]
+              - cell "This is updated protocol Description" [ref=e1705]
+              - cell "2/26/26, 6:34 PM" [ref=e1706]
+              - cell "content_copy edit delete" [ref=e1707]:
+                - generic [ref=e1708]:
+                  - button "content_copy" [ref=e1711]:
+                    - generic [ref=e1712]: content_copy
+                  - button "edit" [ref=e1714]:
+                    - generic [ref=e1715]: edit
+                  - button "delete" [ref=e1717]:
+                    - generic [ref=e1718]: delete
+            - row "Protocol_57693 Active - 2/26/26, 6:33 PM content_copy edit delete" [ref=e1719]:
+              - cell "Protocol_57693" [ref=e1720]:
+                - heading "Protocol_57693" [level=6] [ref=e1721]:
+                  - link "Protocol_57693" [ref=e1722]:
+                    - /url: /protocols/69a067dc030ab099387171
+              - cell "Active" [ref=e1723]
+              - cell "-" [ref=e1724]
+              - cell [ref=e1725]
+              - cell "2/26/26, 6:33 PM" [ref=e1726]
+              - cell "content_copy edit delete" [ref=e1727]:
+                - generic [ref=e1728]:
+                  - button "content_copy" [ref=e1731]:
+                    - generic [ref=e1732]: content_copy
+                  - button "edit" [ref=e1734]:
+                    - generic [ref=e1735]: edit
+                  - button "delete" [ref=e1737]:
+                    - generic [ref=e1738]: delete
+            - row "UpdatedProtocolName_74701 Inactive - Updated Protocol Name 2/26/26, 6:33 PM content_copy edit delete" [ref=e1739]:
+              - cell "UpdatedProtocolName_74701" [ref=e1740]:
+                - heading "UpdatedProtocolName_74701" [level=6] [ref=e1741]:
+                  - link "UpdatedProtocolName_74701" [ref=e1742]:
+                    - /url: /protocols/69a067cd29ef9325742674
+              - cell "Inactive" [ref=e1743]
+              - cell "-" [ref=e1744]
+              - cell "Updated Protocol Name" [ref=e1745]
+              - cell "2/26/26, 6:33 PM" [ref=e1746]
+              - cell "content_copy edit delete" [ref=e1747]:
+                - generic [ref=e1748]:
+                  - button "content_copy" [ref=e1751]:
+                    - generic [ref=e1752]: content_copy
+                  - button "edit" [ref=e1754]:
+                    - generic [ref=e1755]: edit
+                  - button "delete" [ref=e1757]:
+                    - generic [ref=e1758]: delete
+            - row "CloneProtocol_10921 Active - 2/26/26, 6:33 PM content_copy edit delete" [ref=e1759]:
+              - cell "CloneProtocol_10921" [ref=e1760]:
+                - heading "CloneProtocol_10921" [level=6] [ref=e1761]:
+                  - link "CloneProtocol_10921" [ref=e1762]:
+                    - /url: /protocols/69a067c01b9af408634353
+              - cell "Active" [ref=e1763]
+              - cell "-" [ref=e1764]
+              - cell [ref=e1765]
+              - cell "2/26/26, 6:33 PM" [ref=e1766]
+              - cell "content_copy edit delete" [ref=e1767]:
+                - generic [ref=e1768]:
+                  - button "content_copy" [ref=e1771]:
+                    - generic [ref=e1772]: content_copy
+                  - button "edit" [ref=e1774]:
+                    - generic [ref=e1775]: edit
+                  - button "delete" [ref=e1777]:
+                    - generic [ref=e1778]: delete
+            - row "Protocol_83194 Active - 2/26/26, 6:33 PM content_copy edit delete" [ref=e1779]:
+              - cell "Protocol_83194" [ref=e1780]:
+                - heading "Protocol_83194" [level=6] [ref=e1781]:
+                  - link "Protocol_83194" [ref=e1782]:
+                    - /url: /protocols/69a067bb0bd7e322626545
+              - cell "Active" [ref=e1783]
+              - cell "-" [ref=e1784]
+              - cell [ref=e1785]
+              - cell "2/26/26, 6:33 PM" [ref=e1786]
+              - cell "content_copy edit delete" [ref=e1787]:
+                - generic [ref=e1788]:
+                  - button "content_copy" [ref=e1791]:
+                    - generic [ref=e1792]: content_copy
+                  - button "edit" [ref=e1794]:
+                    - generic [ref=e1795]: edit
+                  - button "delete" [ref=e1797]:
+                    - generic [ref=e1798]: delete
+            - row "Protocol_29606 Active - 2/26/26, 6:33 PM content_copy edit delete" [ref=e1799]:
+              - cell "Protocol_29606" [ref=e1800]:
+                - heading "Protocol_29606" [level=6] [ref=e1801]:
+                  - link "Protocol_29606" [ref=e1802]:
+                    - /url: /protocols/69a067ad3409c485666558
+              - cell "Active" [ref=e1803]
+              - cell "-" [ref=e1804]
+              - cell [ref=e1805]
+              - cell "2/26/26, 6:33 PM" [ref=e1806]
+              - cell "content_copy edit delete" [ref=e1807]:
+                - generic [ref=e1808]:
+                  - button "content_copy" [ref=e1811]:
+                    - generic [ref=e1812]: content_copy
+                  - button "edit" [ref=e1814]:
+                    - generic [ref=e1815]: edit
+                  - button "delete" [ref=e1817]:
+                    - generic [ref=e1818]: delete
+            - row "Protocol_72492 Active - 4/22/26, 9:58 AM content_copy edit delete" [ref=e1819]:
+              - cell "Protocol_72492" [ref=e1820]:
+                - heading "Protocol_72492" [level=6] [ref=e1821]:
+                  - link "Protocol_72492" [ref=e1822]:
+                    - /url: /protocols/69a06668731a2510937878
+              - cell "Active" [ref=e1823]
+              - cell "-" [ref=e1824]
+              - cell [ref=e1825]
+              - cell "4/22/26, 9:58 AM" [ref=e1826]
+              - cell "content_copy edit delete" [ref=e1827]:
+                - generic [ref=e1828]:
+                  - button "content_copy" [ref=e1831]:
+                    - generic [ref=e1832]: content_copy
+                  - button "edit" [ref=e1834]:
+                    - generic [ref=e1835]: edit
+                  - button "delete" [ref=e1837]:
+                    - generic [ref=e1838]: delete
+            - row "Protocol_35982 Active - 2/26/26, 6:27 PM content_copy edit delete" [ref=e1839]:
+              - cell "Protocol_35982" [ref=e1840]:
+                - heading "Protocol_35982" [level=6] [ref=e1841]:
+                  - link "Protocol_35982" [ref=e1842]:
+                    - /url: /protocols/69a06654704ef974473205
+              - cell "Active" [ref=e1843]
+              - cell "-" [ref=e1844]
+              - cell [ref=e1845]
+              - cell "2/26/26, 6:27 PM" [ref=e1846]
+              - cell "content_copy edit delete" [ref=e1847]:
+                - generic [ref=e1848]:
+                  - button "content_copy" [ref=e1851]:
+                    - generic [ref=e1852]: content_copy
+                  - button "edit" [ref=e1854]:
+                    - generic [ref=e1855]: edit
+                  - button "delete" [ref=e1857]:
+                    - generic [ref=e1858]: delete
+            - row "Protocol_38592 Active - 2/26/26, 6:27 PM content_copy edit delete" [ref=e1859]:
+              - cell "Protocol_38592" [ref=e1860]:
+                - heading "Protocol_38592" [level=6] [ref=e1861]:
+                  - link "Protocol_38592" [ref=e1862]:
+                    - /url: /protocols/69a0664794283878902429
+              - cell "Active" [ref=e1863]
+              - cell "-" [ref=e1864]
+              - cell [ref=e1865]
+              - cell "2/26/26, 6:27 PM" [ref=e1866]
+              - cell "content_copy edit delete" [ref=e1867]:
+                - generic [ref=e1868]:
+                  - button "content_copy" [ref=e1871]:
+                    - generic [ref=e1872]: content_copy
+                  - button "edit" [ref=e1874]:
+                    - generic [ref=e1875]: edit
+                  - button "delete" [ref=e1877]:
+                    - generic [ref=e1878]: delete
+            - row "Protocol_1226 Active - 2/26/26, 6:26 PM content_copy edit delete" [ref=e1879]:
+              - cell "Protocol_1226" [ref=e1880]:
+                - heading "Protocol_1226" [level=6] [ref=e1881]:
+                  - link "Protocol_1226" [ref=e1882]:
+                    - /url: /protocols/69a0663523bc3669990553
+              - cell "Active" [ref=e1883]
+              - cell "-" [ref=e1884]
+              - cell [ref=e1885]
+              - cell "2/26/26, 6:26 PM" [ref=e1886]
+              - cell "content_copy edit delete" [ref=e1887]:
+                - generic [ref=e1888]:
+                  - button "content_copy" [ref=e1891]:
+                    - generic [ref=e1892]: content_copy
+                  - button "edit" [ref=e1894]:
+                    - generic [ref=e1895]: edit
+                  - button "delete" [ref=e1897]:
+                    - generic [ref=e1898]: delete
+            - row "Protocol_22904 Active - 2/26/26, 6:26 PM content_copy edit delete" [ref=e1899]:
+              - cell "Protocol_22904" [ref=e1900]:
+                - heading "Protocol_22904" [level=6] [ref=e1901]:
+                  - link "Protocol_22904" [ref=e1902]:
+                    - /url: /protocols/69a066285a3d2067288547
+              - cell "Active" [ref=e1903]
+              - cell "-" [ref=e1904]
+              - cell [ref=e1905]
+              - cell "2/26/26, 6:26 PM" [ref=e1906]
+              - cell "content_copy edit delete" [ref=e1907]:
+                - generic [ref=e1908]:
+                  - button "content_copy" [ref=e1911]:
+                    - generic [ref=e1912]: content_copy
+                  - button "edit" [ref=e1914]:
+                    - generic [ref=e1915]: edit
+                  - button "delete" [ref=e1917]:
+                    - generic [ref=e1918]: delete
+            - row "Protocol_28383 Active - 2/26/26, 6:26 PM content_copy edit delete" [ref=e1919]:
+              - cell "Protocol_28383" [ref=e1920]:
+                - heading "Protocol_28383" [level=6] [ref=e1921]:
+                  - link "Protocol_28383" [ref=e1922]:
+                    - /url: /protocols/69a06611f35de284938654
+              - cell "Active" [ref=e1923]
+              - cell "-" [ref=e1924]
+              - cell [ref=e1925]
+              - cell "2/26/26, 6:26 PM" [ref=e1926]
+              - cell "content_copy edit delete" [ref=e1927]:
+                - generic [ref=e1928]:
+                  - button "content_copy" [ref=e1931]:
+                    - generic [ref=e1932]: content_copy
+                  - button "edit" [ref=e1934]:
+                    - generic [ref=e1935]: edit
+                  - button "delete" [ref=e1937]:
+                    - generic [ref=e1938]: delete
+            - row "Protocol_39113 Active - 2/26/26, 6:25 PM content_copy edit delete" [ref=e1939]:
+              - cell "Protocol_39113" [ref=e1940]:
+                - heading "Protocol_39113" [level=6] [ref=e1941]:
+                  - link "Protocol_39113" [ref=e1942]:
+                    - /url: /protocols/69a065f798e89253136345
+              - cell "Active" [ref=e1943]
+              - cell "-" [ref=e1944]
+              - cell [ref=e1945]
+              - cell "2/26/26, 6:25 PM" [ref=e1946]
+              - cell "content_copy edit delete" [ref=e1947]:
+                - generic [ref=e1948]:
+                  - button "content_copy" [ref=e1951]:
+                    - generic [ref=e1952]: content_copy
+                  - button "edit" [ref=e1954]:
+                    - generic [ref=e1955]: edit
+                  - button "delete" [ref=e1957]:
+                    - generic [ref=e1958]: delete
+            - row "Protocol_15967 Active - 2/26/26, 6:25 PM content_copy edit delete" [ref=e1959]:
+              - cell "Protocol_15967" [ref=e1960]:
+                - heading "Protocol_15967" [level=6] [ref=e1961]:
+                  - link "Protocol_15967" [ref=e1962]:
+                    - /url: /protocols/69a065e703518964685834
+              - cell "Active" [ref=e1963]
+              - cell "-" [ref=e1964]
+              - cell [ref=e1965]
+              - cell "2/26/26, 6:25 PM" [ref=e1966]
+              - cell "content_copy edit delete" [ref=e1967]:
+                - generic [ref=e1968]:
+                  - button "content_copy" [ref=e1971]:
+                    - generic [ref=e1972]: content_copy
+                  - button "edit" [ref=e1974]:
+                    - generic [ref=e1975]: edit
+                  - button "delete" [ref=e1977]:
+                    - generic [ref=e1978]: delete
+            - row "Protocol_72142 Active - 2/26/26, 6:25 PM content_copy edit delete" [ref=e1979]:
+              - cell "Protocol_72142" [ref=e1980]:
+                - heading "Protocol_72142" [level=6] [ref=e1981]:
+                  - link "Protocol_72142" [ref=e1982]:
+                    - /url: /protocols/69a065d618ebb066288287
+              - cell "Active" [ref=e1983]
+              - cell "-" [ref=e1984]
+              - cell [ref=e1985]
+              - cell "2/26/26, 6:25 PM" [ref=e1986]
+              - cell "content_copy edit delete" [ref=e1987]:
+                - generic [ref=e1988]:
+                  - button "content_copy" [ref=e1991]:
+                    - generic [ref=e1992]: content_copy
+                  - button "edit" [ref=e1994]:
+                    - generic [ref=e1995]: edit
+                  - button "delete" [ref=e1997]:
+                    - generic [ref=e1998]: delete
+            - row "Protocol_15771 Active - 2/26/26, 6:24 PM content_copy edit delete" [ref=e1999]:
+              - cell "Protocol_15771" [ref=e2000]:
+                - heading "Protocol_15771" [level=6] [ref=e2001]:
+                  - link "Protocol_15771" [ref=e2002]:
+                    - /url: /protocols/69a065c8c3914727145323
+              - cell "Active" [ref=e2003]
+              - cell "-" [ref=e2004]
+              - cell [ref=e2005]
+              - cell "2/26/26, 6:24 PM" [ref=e2006]
+              - cell "content_copy edit delete" [ref=e2007]:
+                - generic [ref=e2008]:
+                  - button "content_copy" [ref=e2011]:
+                    - generic [ref=e2012]: content_copy
+                  - button "edit" [ref=e2014]:
+                    - generic [ref=e2015]: edit
+                  - button "delete" [ref=e2017]:
+                    - generic [ref=e2018]: delete
+            - row "UpdatedProtocolName_42899 Inactive - This is updated protocol Description 2/26/26, 6:24 PM content_copy edit delete" [ref=e2019]:
+              - cell "UpdatedProtocolName_42899" [ref=e2020]:
+                - heading "UpdatedProtocolName_42899" [level=6] [ref=e2021]:
+                  - link "UpdatedProtocolName_42899" [ref=e2022]:
+                    - /url: /protocols/69a065baeda6f802017193
+              - cell "Inactive" [ref=e2023]
+              - cell "-" [ref=e2024]
+              - cell "This is updated protocol Description" [ref=e2025]
+              - cell "2/26/26, 6:24 PM" [ref=e2026]
+              - cell "content_copy edit delete" [ref=e2027]:
+                - generic [ref=e2028]:
+                  - button "content_copy" [ref=e2031]:
+                    - generic [ref=e2032]: content_copy
+                  - button "edit" [ref=e2034]:
+                    - generic [ref=e2035]: edit
+                  - button "delete" [ref=e2037]:
+                    - generic [ref=e2038]: delete
+            - row "UpdatedProtocolName_53091 Inactive - This is updated protocol Description 2/26/26, 6:24 PM content_copy edit delete" [ref=e2039]:
+              - cell "UpdatedProtocolName_53091" [ref=e2040]:
+                - heading "UpdatedProtocolName_53091" [level=6] [ref=e2041]:
+                  - link "UpdatedProtocolName_53091" [ref=e2042]:
+                    - /url: /protocols/69a065ad13257342879116
+              - cell "Inactive" [ref=e2043]
+              - cell "-" [ref=e2044]
+              - cell "This is updated protocol Description" [ref=e2045]
+              - cell "2/26/26, 6:24 PM" [ref=e2046]
+              - cell "content_copy edit delete" [ref=e2047]:
+                - generic [ref=e2048]:
+                  - button "content_copy" [ref=e2051]:
+                    - generic [ref=e2052]: content_copy
+                  - button "edit" [ref=e2054]:
+                    - generic [ref=e2055]: edit
+                  - button "delete" [ref=e2057]:
+                    - generic [ref=e2058]: delete
+            - row "Protocol_88445 Active - 2/26/26, 6:24 PM content_copy edit delete" [ref=e2059]:
+              - cell "Protocol_88445" [ref=e2060]:
+                - heading "Protocol_88445" [level=6] [ref=e2061]:
+                  - link "Protocol_88445" [ref=e2062]:
+                    - /url: /protocols/69a065a0af48b397596295
+              - cell "Active" [ref=e2063]
+              - cell "-" [ref=e2064]
+              - cell [ref=e2065]
+              - cell "2/26/26, 6:24 PM" [ref=e2066]
+              - cell "content_copy edit delete" [ref=e2067]:
+                - generic [ref=e2068]:
+                  - button "content_copy" [ref=e2071]:
+                    - generic [ref=e2072]: content_copy
+                  - button "edit" [ref=e2074]:
+                    - generic [ref=e2075]: edit
+                  - button "delete" [ref=e2077]:
+                    - generic [ref=e2078]: delete
+            - row "UpdatedProtocolName_90658 Inactive - Updated Protocol Name 2/26/26, 6:24 PM content_copy edit delete" [ref=e2079]:
+              - cell "UpdatedProtocolName_90658" [ref=e2080]:
+                - heading "UpdatedProtocolName_90658" [level=6] [ref=e2081]:
+                  - link "UpdatedProtocolName_90658" [ref=e2082]:
+                    - /url: /protocols/69a0659290cef636293461
+              - cell "Inactive" [ref=e2083]
+              - cell "-" [ref=e2084]
+              - cell "Updated Protocol Name" [ref=e2085]
+              - cell "2/26/26, 6:24 PM" [ref=e2086]
+              - cell "content_copy edit delete" [ref=e2087]:
+                - generic [ref=e2088]:
+                  - button "content_copy" [ref=e2091]:
+                    - generic [ref=e2092]: content_copy
+                  - button "edit" [ref=e2094]:
+                    - generic [ref=e2095]: edit
+                  - button "delete" [ref=e2097]:
+                    - generic [ref=e2098]: delete
+            - row "CloneProtocol_94369 Active - 2/26/26, 6:23 PM content_copy edit delete" [ref=e2099]:
+              - cell "CloneProtocol_94369" [ref=e2100]:
+                - heading "CloneProtocol_94369" [level=6] [ref=e2101]:
+                  - link "CloneProtocol_94369" [ref=e2102]:
+                    - /url: /protocols/69a06587a121c760994404
+              - cell "Active" [ref=e2103]
+              - cell "-" [ref=e2104]
+              - cell [ref=e2105]
+              - cell "2/26/26, 6:23 PM" [ref=e2106]
+              - cell "content_copy edit delete" [ref=e2107]:
+                - generic [ref=e2108]:
+                  - button "content_copy" [ref=e2111]:
+                    - generic [ref=e2112]: content_copy
+                  - button "edit" [ref=e2114]:
+                    - generic [ref=e2115]: edit
+                  - button "delete" [ref=e2117]:
+                    - generic [ref=e2118]: delete
+            - row "Protocol_91255 Active - 2/26/26, 6:23 PM content_copy edit delete" [ref=e2119]:
+              - cell "Protocol_91255" [ref=e2120]:
+                - heading "Protocol_91255" [level=6] [ref=e2121]:
+                  - link "Protocol_91255" [ref=e2122]:
+                    - /url: /protocols/69a0658360566654268511
+              - cell "Active" [ref=e2123]
+              - cell "-" [ref=e2124]
+              - cell [ref=e2125]
+              - cell "2/26/26, 6:23 PM" [ref=e2126]
+              - cell "content_copy edit delete" [ref=e2127]:
+                - generic [ref=e2128]:
+                  - button "content_copy" [ref=e2131]:
+                    - generic [ref=e2132]: content_copy
+                  - button "edit" [ref=e2134]:
+                    - generic [ref=e2135]: edit
+                  - button "delete" [ref=e2137]:
+                    - generic [ref=e2138]: delete
+            - row "Protocol_33852 Active - 2/26/26, 6:23 PM content_copy edit delete" [ref=e2139]:
+              - cell "Protocol_33852" [ref=e2140]:
+                - heading "Protocol_33852" [level=6] [ref=e2141]:
+                  - link "Protocol_33852" [ref=e2142]:
+                    - /url: /protocols/69a06577c5349228306011
+              - cell "Active" [ref=e2143]
+              - cell "-" [ref=e2144]
+              - cell [ref=e2145]
+              - cell "2/26/26, 6:23 PM" [ref=e2146]
+              - cell "content_copy edit delete" [ref=e2147]:
+                - generic [ref=e2148]:
+                  - button "content_copy" [ref=e2151]:
+                    - generic [ref=e2152]: content_copy
+                  - button "edit" [ref=e2154]:
+                    - generic [ref=e2155]: edit
+                  - button "delete" [ref=e2157]:
+                    - generic [ref=e2158]: delete
+            - row "Protocol_19336 Active - 4/22/26, 9:58 AM content_copy edit delete" [ref=e2159]:
+              - cell "Protocol_19336" [ref=e2160]:
+                - heading "Protocol_19336" [level=6] [ref=e2161]:
+                  - link "Protocol_19336" [ref=e2162]:
+                    - /url: /protocols/69a060954bfd6866322258
+              - cell "Active" [ref=e2163]
+              - cell "-" [ref=e2164]
+              - cell [ref=e2165]
+              - cell "4/22/26, 9:58 AM" [ref=e2166]
+              - cell "content_copy edit delete" [ref=e2167]:
+                - generic [ref=e2168]:
+                  - button "content_copy" [ref=e2171]:
+                    - generic [ref=e2172]: content_copy
+                  - button "edit" [ref=e2174]:
+                    - generic [ref=e2175]: edit
+                  - button "delete" [ref=e2177]:
+                    - generic [ref=e2178]: delete
+            - row "Protocol_69143 Active - 2/26/26, 6:02 PM content_copy edit delete" [ref=e2179]:
+              - cell "Protocol_69143" [ref=e2180]:
+                - heading "Protocol_69143" [level=6] [ref=e2181]:
+                  - link "Protocol_69143" [ref=e2182]:
+                    - /url: /protocols/69a06080462ed557143493
+              - cell "Active" [ref=e2183]
+              - cell "-" [ref=e2184]
+              - cell [ref=e2185]
+              - cell "2/26/26, 6:02 PM" [ref=e2186]
+              - cell "content_copy edit delete" [ref=e2187]:
+                - generic [ref=e2188]:
+                  - button "content_copy" [ref=e2191]:
+                    - generic [ref=e2192]: content_copy
+                  - button "edit" [ref=e2194]:
+                    - generic [ref=e2195]: edit
+                  - button "delete" [ref=e2197]:
+                    - generic [ref=e2198]: delete
+            - row "Protocol_48826 Active - 2/26/26, 6:02 PM content_copy edit delete" [ref=e2199]:
+              - cell "Protocol_48826" [ref=e2200]:
+                - heading "Protocol_48826" [level=6] [ref=e2201]:
+                  - link "Protocol_48826" [ref=e2202]:
+                    - /url: /protocols/69a0607169a5d578145535
+              - cell "Active" [ref=e2203]
+              - cell "-" [ref=e2204]
+              - cell [ref=e2205]
+              - cell "2/26/26, 6:02 PM" [ref=e2206]
+              - cell "content_copy edit delete" [ref=e2207]:
+                - generic [ref=e2208]:
+                  - button "content_copy" [ref=e2211]:
+                    - generic [ref=e2212]: content_copy
+                  - button "edit" [ref=e2214]:
+                    - generic [ref=e2215]: edit
+                  - button "delete" [ref=e2217]:
+                    - generic [ref=e2218]: delete
+            - row "Protocol_67523 Active - 2/26/26, 6:01 PM content_copy edit delete" [ref=e2219]:
+              - cell "Protocol_67523" [ref=e2220]:
+                - heading "Protocol_67523" [level=6] [ref=e2221]:
+                  - link "Protocol_67523" [ref=e2222]:
+                    - /url: /protocols/69a06060683d3580876371
+              - cell "Active" [ref=e2223]
+              - cell "-" [ref=e2224]
+              - cell [ref=e2225]
+              - cell "2/26/26, 6:01 PM" [ref=e2226]
+              - cell "content_copy edit delete" [ref=e2227]:
+                - generic [ref=e2228]:
+                  - button "content_copy" [ref=e2231]:
+                    - generic [ref=e2232]: content_copy
+                  - button "edit" [ref=e2234]:
+                    - generic [ref=e2235]: edit
+                  - button "delete" [ref=e2237]:
+                    - generic [ref=e2238]: delete
+            - row "Protocol_81215 Active - 2/26/26, 6:01 PM content_copy edit delete" [ref=e2239]:
+              - cell "Protocol_81215" [ref=e2240]:
+                - heading "Protocol_81215" [level=6] [ref=e2241]:
+                  - link "Protocol_81215" [ref=e2242]:
+                    - /url: /protocols/69a060527d4bf719623125
+              - cell "Active" [ref=e2243]
+              - cell "-" [ref=e2244]
+              - cell [ref=e2245]
+              - cell "2/26/26, 6:01 PM" [ref=e2246]
+              - cell "content_copy edit delete" [ref=e2247]:
+                - generic [ref=e2248]:
+                  - button "content_copy" [ref=e2251]:
+                    - generic [ref=e2252]: content_copy
+                  - button "edit" [ref=e2254]:
+                    - generic [ref=e2255]: edit
+                  - button "delete" [ref=e2257]:
+                    - generic [ref=e2258]: delete
+            - row "Protocol_9066 Active - 2/26/26, 6:01 PM content_copy edit delete" [ref=e2259]:
+              - cell "Protocol_9066" [ref=e2260]:
+                - heading "Protocol_9066" [level=6] [ref=e2261]:
+                  - link "Protocol_9066" [ref=e2262]:
+                    - /url: /protocols/69a0603ae5981623228403
+              - cell "Active" [ref=e2263]
+              - cell "-" [ref=e2264]
+              - cell [ref=e2265]
+              - cell "2/26/26, 6:01 PM" [ref=e2266]
+              - cell "content_copy edit delete" [ref=e2267]:
+                - generic [ref=e2268]:
+                  - button "content_copy" [ref=e2271]:
+                    - generic [ref=e2272]: content_copy
+                  - button "edit" [ref=e2274]:
+                    - generic [ref=e2275]: edit
+                  - button "delete" [ref=e2277]:
+                    - generic [ref=e2278]: delete
+            - row "Protocol_23722 Active - 2/26/26, 6:00 PM content_copy edit delete" [ref=e2279]:
+              - cell "Protocol_23722" [ref=e2280]:
+                - heading "Protocol_23722" [level=6] [ref=e2281]:
+                  - link "Protocol_23722" [ref=e2282]:
+                    - /url: /protocols/69a0601eb2afe860834456
+              - cell "Active" [ref=e2283]
+              - cell "-" [ref=e2284]
+              - cell [ref=e2285]
+              - cell "2/26/26, 6:00 PM" [ref=e2286]
+              - cell "content_copy edit delete" [ref=e2287]:
+                - generic [ref=e2288]:
+                  - button "content_copy" [ref=e2291]:
+                    - generic [ref=e2292]: content_copy
+                  - button "edit" [ref=e2294]:
+                    - generic [ref=e2295]: edit
+                  - button "delete" [ref=e2297]:
+                    - generic [ref=e2298]: delete
+            - row "Protocol_114 Active - 2/26/26, 6:00 PM content_copy edit delete" [ref=e2299]:
+              - cell "Protocol_114" [ref=e2300]:
+                - heading "Protocol_114" [level=6] [ref=e2301]:
+                  - link "Protocol_114" [ref=e2302]:
+                    - /url: /protocols/69a0600dd1eab739755191
+              - cell "Active" [ref=e2303]
+              - cell "-" [ref=e2304]
+              - cell [ref=e2305]
+              - cell "2/26/26, 6:00 PM" [ref=e2306]
+              - cell "content_copy edit delete" [ref=e2307]:
+                - generic [ref=e2308]:
+                  - button "content_copy" [ref=e2311]:
+                    - generic [ref=e2312]: content_copy
+                  - button "edit" [ref=e2314]:
+                    - generic [ref=e2315]: edit
+                  - button "delete" [ref=e2317]:
+                    - generic [ref=e2318]: delete
+            - row "Protocol_17303 Active - 2/26/26, 6:00 PM content_copy edit delete" [ref=e2319]:
+              - cell "Protocol_17303" [ref=e2320]:
+                - heading "Protocol_17303" [level=6] [ref=e2321]:
+                  - link "Protocol_17303" [ref=e2322]:
+                    - /url: /protocols/69a05ffd028a0897817505
+              - cell "Active" [ref=e2323]
+              - cell "-" [ref=e2324]
+              - cell [ref=e2325]
+              - cell "2/26/26, 6:00 PM" [ref=e2326]
+              - cell "content_copy edit delete" [ref=e2327]:
+                - generic [ref=e2328]:
+                  - button "content_copy" [ref=e2331]:
+                    - generic [ref=e2332]: content_copy
+                  - button "edit" [ref=e2334]:
+                    - generic [ref=e2335]: edit
+                  - button "delete" [ref=e2337]:
+                    - generic [ref=e2338]: delete
+            - row "Protocol_19508 Active - 2/26/26, 5:59 PM content_copy edit delete" [ref=e2339]:
+              - cell "Protocol_19508" [ref=e2340]:
+                - heading "Protocol_19508" [level=6] [ref=e2341]:
+                  - link "Protocol_19508" [ref=e2342]:
+                    - /url: /protocols/69a05fee843e1063268662
+              - cell "Active" [ref=e2343]
+              - cell "-" [ref=e2344]
+              - cell [ref=e2345]
+              - cell "2/26/26, 5:59 PM" [ref=e2346]
+              - cell "content_copy edit delete" [ref=e2347]:
+                - generic [ref=e2348]:
+                  - button "content_copy" [ref=e2351]:
+                    - generic [ref=e2352]: content_copy
+                  - button "edit" [ref=e2354]:
+                    - generic [ref=e2355]: edit
+                  - button "delete" [ref=e2357]:
+                    - generic [ref=e2358]: delete
+            - row "UpdatedProtocolName_20823 Inactive - This is updated protocol Description 2/26/26, 5:59 PM content_copy edit delete" [ref=e2359]:
+              - cell "UpdatedProtocolName_20823" [ref=e2360]:
+                - heading "UpdatedProtocolName_20823" [level=6] [ref=e2361]:
+                  - link "UpdatedProtocolName_20823" [ref=e2362]:
+                    - /url: /protocols/69a05fe0f306b409016750
+              - cell "Inactive" [ref=e2363]
+              - cell "-" [ref=e2364]
+              - cell "This is updated protocol Description" [ref=e2365]
+              - cell "2/26/26, 5:59 PM" [ref=e2366]
+              - cell "content_copy edit delete" [ref=e2367]:
+                - generic [ref=e2368]:
+                  - button "content_copy" [ref=e2371]:
+                    - generic [ref=e2372]: content_copy
+                  - button "edit" [ref=e2374]:
+                    - generic [ref=e2375]: edit
+                  - button "delete" [ref=e2377]:
+                    - generic [ref=e2378]: delete
+            - row "Protocol_96310 Active - 2/26/26, 5:59 PM content_copy edit delete" [ref=e2379]:
+              - cell "Protocol_96310" [ref=e2380]:
+                - heading "Protocol_96310" [level=6] [ref=e2381]:
+                  - link "Protocol_96310" [ref=e2382]:
+                    - /url: /protocols/69a05fd50b13e627516763
+              - cell "Active" [ref=e2383]
+              - cell "-" [ref=e2384]
+              - cell [ref=e2385]
+              - cell "2/26/26, 5:59 PM" [ref=e2386]
+              - cell "content_copy edit delete" [ref=e2387]:
+                - generic [ref=e2388]:
+                  - button "content_copy" [ref=e2391]:
+                    - generic [ref=e2392]: content_copy
+                  - button "edit" [ref=e2394]:
+                    - generic [ref=e2395]: edit
+                  - button "delete" [ref=e2397]:
+                    - generic [ref=e2398]: delete
+            - row "UpdatedProtocolName_23227 Inactive - Updated Protocol Name 2/26/26, 5:59 PM content_copy edit delete" [ref=e2399]:
+              - cell "UpdatedProtocolName_23227" [ref=e2400]:
+                - heading "UpdatedProtocolName_23227" [level=6] [ref=e2401]:
+                  - link "UpdatedProtocolName_23227" [ref=e2402]:
+                    - /url: /protocols/69a05fc450460577338084
+              - cell "Inactive" [ref=e2403]
+              - cell "-" [ref=e2404]
+              - cell "Updated Protocol Name" [ref=e2405]
+              - cell "2/26/26, 5:59 PM" [ref=e2406]
+              - cell "content_copy edit delete" [ref=e2407]:
+                - generic [ref=e2408]:
+                  - button "content_copy" [ref=e2411]:
+                    - generic [ref=e2412]: content_copy
+                  - button "edit" [ref=e2414]:
+                    - generic [ref=e2415]: edit
+                  - button "delete" [ref=e2417]:
+                    - generic [ref=e2418]: delete
+            - row "CloneProtocol_27089 Active - 2/26/26, 5:59 PM content_copy edit delete" [ref=e2419]:
+              - cell "CloneProtocol_27089" [ref=e2420]:
+                - heading "CloneProtocol_27089" [level=6] [ref=e2421]:
+                  - link "CloneProtocol_27089" [ref=e2422]:
+                    - /url: /protocols/69a05fba3bff2595448831
+              - cell "Active" [ref=e2423]
+              - cell "-" [ref=e2424]
+              - cell [ref=e2425]
+              - cell "2/26/26, 5:59 PM" [ref=e2426]
+              - cell "content_copy edit delete" [ref=e2427]:
+                - generic [ref=e2428]:
+                  - button "content_copy" [ref=e2431]:
+                    - generic [ref=e2432]: content_copy
+                  - button "edit" [ref=e2434]:
+                    - generic [ref=e2435]: edit
+                  - button "delete" [ref=e2437]:
+                    - generic [ref=e2438]: delete
+        - generic [ref=e2440]:
+          - list [ref=e2442]:
+            - listitem [ref=e2443]:
+              - generic:
+                - generic: « Previous
+            - listitem [ref=e2444]:
+              - generic [ref=e2445]:
+                - generic [ref=e2446]: "1"
+                - generic [ref=e2447]: (current)
+            - listitem [ref=e2448]:
+              - button "2" [ref=e2449]:
+                - generic [ref=e2450]: "2"
+            - listitem [ref=e2451]:
+              - button "3" [ref=e2452]:
+                - generic [ref=e2453]: "3"
+            - listitem [ref=e2454]:
+              - button "4" [ref=e2455]:
+                - generic [ref=e2456]: "4"
+            - listitem [ref=e2457]:
+              - button "5" [ref=e2458]:
+                - generic [ref=e2459]: "5"
+            - listitem [ref=e2460]:
+              - generic:
+                - generic: ...
+            - listitem [ref=e2461]:
+              - button "9" [ref=e2462]:
+                - generic [ref=e2463]: "9"
+            - listitem [ref=e2464]:
+              - button "Next »" [ref=e2465]:
+                - generic [ref=e2466]: Next »
+          - generic [ref=e2467]: Showing1-150of1315
+          - combobox [ref=e2469]:
+            - option "10"
+            - option "25"
+            - option "50"
+            - option "100"
+            - option "150" [selected]
+    - generic [ref=e2473]:
+      - text: Copyright © 2026 ERM
+      - link "Privacy Policy" [ref=e2476] [cursor=pointer]:
+        - /url: https://www.erm.com/privacy/
+      - generic [ref=e2479]: v 0.4.4
+```
+
+# Test source
+
+```ts
+  229 | 
+  230 |   async clickFileCheckbox() {
+  231 |     await this.fileCheckbox.click()
+  232 |   }
+  233 | 
+  234 |   async clickActionItemsCheckbox() {
+  235 |     await this.actionItemsCheckbox.click()
+  236 |   }
+  237 | 
+  238 |   async clickNotepadCheckbox() {
+  239 |     await this.notepadCheckbox.click()
+  240 |   }
+  241 | 
+  242 |   async clickCertificationCommentsCheckbox() {
+  243 |     await this.certificationCommentsCheckbox.click()
+  244 |   }
+  245 | 
+  246 |   async clickObservationSetsCheckbox() {
+  247 |     await this.observationSetsCheckbox.click()
+  248 |   }
+  249 | 
+  250 |   async clickSuccessUpdateBtn() {
+  251 |     await this.successUpdateBtn.click()
+  252 |   }
+  253 | 
+  254 |   async newProtocolNameUpdatedLinkText() {
+  255 |     await this.updatedNewLink
+  256 |   }
+  257 | 
+  258 |   async clickDeleteNewProtocol2Btn() {
+  259 |     await this.deleteNewProtocol2Btn.click()
+  260 |   }
+  261 | 
+  262 |   async clickagreeCheckbox() {
+  263 |     await this.agreeCheckbox.check()
+  264 |   }
+  265 | 
+  266 |   async clickconfirmDeleteBtn() {
+  267 |     await this.confirmDeleteBtn.click()
+  268 |   }
+  269 | 
+  270 |   async closeDeleteModalDiv() {
+  271 |     await this.deleteModalDiv
+  272 |   }
+  273 | 
+  274 |   async clickDeleteNewProtocolClone1Btn() {
+  275 |     await this.deleteNewProtocolClone1Btn.click()
+  276 |   }
+  277 | 
+  278 |   async clickPrincipleTabBtn() {
+  279 |     await this.principlesTabBtn.click()
+  280 |   }
+  281 | 
+  282 |   async typePrincipleDescriptionTxtBox(principleDescription) {
+  283 |     await this.principleDescriptionTxtBox.fill(principleDescription)
+  284 |   }
+  285 | 
+  286 |   async clickViewFirstProtocolLink() {
+  287 |     await this.viewFirstProtocolLink.click()
+  288 |   }
+  289 | 
+  290 |   async clickGenericConfirmCreateBtn() {
+  291 |     await this.genericConfirmCreateBtn.click()
+  292 |   }
+  293 | 
+  294 |   async clickAddNewResponseFieldBtn() {
+  295 |     await this.addNewResponseFieldBtn.click()
+  296 |   }
+  297 | 
+  298 |   async clickSelectQuestionTypeDropdown() {
+  299 |     await this.selectQuestionTypeDropdown.click()
+  300 |   }
+  301 | 
+  302 |   async clickAddNewPreAssessmentBtn() {
+  303 |     await this.addNewPreAssessmentBtn.click()
+  304 |   }
+  305 | 
+  306 |   async clickSelectScopeQuestionTypeDropdown() {
+  307 |     await this.selectScopeQuestionTypeDropdown.click()
+  308 |   }
+  309 | 
+  310 | 
+  311 |   // ----- Functions ----
+  312 | 
+  313 | 
+  314 |   async cloneProtocol() {
+  315 |     await this.clickProtocolLink()
+  316 |     await this.clickCloneBtn.first().click();
+  317 |     this.cloneProtocol = `CloneProtocol_${Math.floor(Math.random() * 100000)}`; // store as class property
+  318 |     await this.typeProtocolNameTextBox.fill(this.cloneProtocol); 
+  319 |     await this.sectionAndPrinciplesCheckbox.check();
+  320 |     await this.responseFieldsCheckbox.check();
+  321 |     await this.scopeAndScreeningFieldsCheckbox.check();
+  322 |     await this.applicabilityScreeningFieldsCheckbox.check();
+  323 |     await this.clickConfirmClonBtn.click();
+  324 |     await this.successfulClonedToastMsg.click()
+  325 |   }
+  326 | 
+  327 |   async deleteFirstProtocolFromProtocolListing(){
+  328 |     
+> 329 |     await this.page.getByRole('combobox').selectOption('150');
+      |                                           ^ Error: locator.selectOption: Test timeout of 60000ms exceeded.
+  330 |     await this.clickDeleteBtn.first().click();
+  331 |     const protocolNameVariable = await this.page.getByRole('heading', { name: 'Delete Protocol -', }).innerText()
+  332 |     await this.page.getByRole('checkbox').check();
+  333 |     await this.page.getByRole('button', { name: 'Delete', exact: true }).click();
+  334 |     //await expect(this.page.locator('tr', { hasText: protocolNameVariable })).toHaveCount(0);
+  335 |     await this.page.waitForTimeout(1000);
+  336 |   }
+  337 | 
+  338 |   async updateFirstProtocolFromProtocolListing(){
+  339 |     await this.clickEdittedBtn.first().click(); 
+  340 |     this.updatedProtocolName = `UpdatedProtocolName_${Math.floor(Math.random() * 100000)}`; // store as class property
+  341 |     await this.typeProtocolNameTextBox.fill(this.updatedProtocolName);
+  342 |     await this.protocolDescriptionTxtbox.fill('Updated Protocol Name');
+  343 |     await this.protocolStatus.selectOption('2');
+  344 |     await this.collectSignatoriesCheckBox.uncheck();
+  345 |     await this.collectMediaFilesCheckBox.uncheck();
+  346 |     await this.collectActionItemsCheckBox.uncheck();
+  347 |     await this.collectMemoNotepadCheckBox.uncheck();
+  348 |     await this.collectCertificationCheckBox.uncheck();
+  349 |     await this.allowMultipleSetsCheckBox.uncheck();
+  350 |     await this.updatePrincipleBtn.click();
+  351 |     await this.successfulProtocolUpdatedToastMsg.click();
+  352 |   }
+  353 | 
+  354 |   async updateProtocolFromInsideProtocol(){
+  355 |     await this.clickSettingsBtn.click();
+  356 |      this.updatedProtocolName = `UpdatedProtocolName_${Math.floor(Math.random() * 100000)}`; // store as class property
+  357 |     await this.typeProtocolNameTextBox.fill(this.updatedProtocolName);
+  358 |     await this.protocolDescriptionTxtbox.fill('This is updated protocol Description');
+  359 |     await this.protocolStatus.selectOption('2');
+  360 |     await this.collectSignatoriesCheckBox.uncheck();
+  361 |     await this.collectMediaFilesCheckBox.uncheck();
+  362 |     await this.collectActionItemsCheckBox.uncheck();
+  363 |     await this.collectMemoNotepadCheckBox.uncheck();
+  364 |     await this.collectCertificationCheckBox.uncheck();
+  365 |     await this.allowMultipleSetsCheckBox.uncheck();
+  366 |     await this.updatePrincipleBtn.click();
+  367 |     await this.successfulProtocolUpdatedToastMsg.click();
+  368 | 
+  369 |   }
+  370 | 
+  371 | 
+  372 |   async clickagreeCheckbox() {
+  373 |     await this.agreeCheckbox.click()
+  374 |   }
+  375 | 
+  376 |   async clickconfirmDeleteBtn() {
+  377 |     await this.confirmDeleteBtn.click()
+  378 |   }
+  379 | 
+  380 |   async closeDeleteModalDiv() {
+  381 |     await this.deleteModalDiv
+  382 |   }
+  383 | 
+  384 |   async clickDeleteNewProtocolClone1Btn() {
+  385 |     await this.deleteNewProtocolClone1Btn.click()
+  386 |   } 
+  387 |  
+  388 | async updatePrinciple() {
+  389 |     await this.clickEdittedBtn.click();
+  390 |     this.principleName2 = `Principal_${Math.floor(Math.random() * 100000)}`;
+  391 |     await this.typePrincipleNameTxtBox.fill(this.principleName2);
+  392 |     await this.typePrincipleDescriptionTxt.fill('This is principle 12');
+  393 |     await this.updatePrincipleBtn.click();
+  394 |     await this.successUpdatePrincipleToast.click();
+  395 | }
+  396 | 
+  397 | async deletePrinciple() {
+  398 |     await this.clickDeletePrincipleBtn.click();
+  399 |     await this.tickDeleteCheckbox.check();
+  400 |     await this.confirmDeleteBtn.click();
+  401 |     await this.successDeletedPrincipleToast.click();
+  402 | }
+  403 | 
+  404 | async createProtocolNew2() {
+  405 |     await this.clickUserMenu();
+  406 |     await this.clickProtocolLink()
+  407 |     await this.clickProtocolBtn()
+  408 |     const protocolName = `Protocol_${Math.floor(Math.random() * 100000)}`;
+  409 |     await this.typeProtocolNameTextBox.fill(protocolName)
+  410 |     await this.clickSignatureCheckbox()
+  411 |     await this.clickFileCheckbox()
+  412 |     await this.clickActionItemsCheckbox()
+  413 |     await this.clickNotepadCheckbox()
+  414 |     await this.clickCertificationCommentsCheckbox()
+  415 |     await this.clickObservationSetsCheckbox()
+  416 |     await this.clickGenericConfirmCreateBtn()
+  417 |     await expect(this.protocolHeaderText).toBeVisible({ timeout: 30000 })
+  418 | 
+  419 | }
+  420 | 
+  421 |   async createPrinciple2(principleDescription){
+  422 |     await this.clickPrincipleTabBtn()
+  423 |     await this.clickAddNewPrincipleBtn.click()
+  424 |     this.principleName = `Principal_${Math.floor(Math.random() * 100000)}`; // store as class property
+  425 |     await this.principleNameTxtBox.fill(this.principleName)
+  426 |     await this.typePrincipleDescriptionTxtBox(principleDescription)
+  427 |     await this.clickGenericConfirmCreateBtn()
+  428 |     await expect(this.successCreatedPrincipleToast).toBeVisible()
+  429 | }
+```
